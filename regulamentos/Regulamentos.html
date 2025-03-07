@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-PQSFKTS" as="script"/>
+<link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-TTZNN90HGX&l=dataLayer&cx=c" as="script"/>
+<link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script"/>
+<link rel="preload" href="https://connect.facebook.net/en_US/fbevents.js" as="script"/>
+<!--[if gt IE 9]><!-->
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+
+<!--<![endif]-->
+<meta charset=UTF-8>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+    <title>
+        Regulamentos | Loja Cacau Show
+    </title>
+
+
+<meta name="description" content="Regulamento de campanhas e promo&ccedil;&otilde;es Cacau Show"/>
+<meta name="keywords" content="Regulamentos, promo&ccedil;&atilde;o, promocao, promo&ccedil;&otilde;es, regras,regulamento,campanha, campanhas"/>
+
+
+
+
+<link rel="icon" type="image/png" href="../on/demandware.static/Sites-CacauShow-Site/-/default/dw0281253c/images/favicon.ico"/>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQSFKTS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Optimize -->
+<script async src="https://www.googleoptimize.com/optimize.js?id=OPT-5MPHKZF"></script>
+<!-- End Google Optimize -->
+
+<script>
+  var storedUserId = sessionStorage.getItem('userId') || undefined,
+      pathName = window.location.pathname,
+      pageTypeByPathname = pathName.split('/')[1],
+      pageTypeDictionary = {
+    'home':'home',
+    'categoria':'category',
+    'produto':'product',
+    'busca':'internalsitesearch',
+    'carrinho':'cart',
+    'checkout':'checkout'
+  };
+
+if(!storedUserId){
+  fetch('/on/demandware.store/Sites-CacauShow-Site/default/Account-PageView')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok fetching user id');
+    }
+    return response.json();
+  })
+  .then(data => {
+    sessionStorage.setItem('userId',data.userId)
+  })
+  .catch(error => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'Data Layer Error: ' + error.message
+            });
+  });
+  }
+
+  (function pushPageView(storedUserId) {
+    const currentPage = window.location.pathname
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+        'event': 'virtualPageView',
+        'currentPage': currentPage,
+        'pageType': pageTypeDictionary[pageTypeByPathname],
+        'pageTitle': document.title,
+        'previousPage': getPreviousPage(currentPage),
+        'userID': storedUserId,
+    });
+  })(storedUserId)
+
+
+
+  function getPreviousPage(currentPage) {
+    const previousPage = window.sessionStorage.getItem('dataLayer/previousPage');
+    window.sessionStorage.setItem('dataLayer/previousPage', currentPage);
+    return previousPage;
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<!-- VWO Tag Script -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code || (function() {
+var account_id=1004419,
+version=2.1,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+</script>
+
+
+<link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/global.css" />
+
+
+
+
+    <link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/smartOrderRefill.css" />
+
+
+
+
+    <meta name="google-site-verification" content="HV1li6dst_6LWYxjo7e_ada038iVt0t2L_nZE7TmS1Y" />
+
+
+<meta name="facebook-domain-verification" content="52tht2pe7s2lmpwrlrz87cj928yooi" />
+
+
+<script>
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE"};
+window.Resources = {"I_AGREE":"global.i_agree","CLOSE":"global.close","CEP":"07753580","BASIC_ADDRESS":"6045"};
+window.Urls = {"homeShow":"/","continueUrl":"https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Page-AppResources","staticPath":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/","giftRegAdd":"https://www.cacaushow.com.br/detalhes-endereco","getAvailability":"/on/demandware.store/Sites-CacauShow-Site/default/Product-GetAvailability","cartGet":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Get","cartItems":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Items","WishlistGet":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-GetListJson","removeImg":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/images/icon_remove.gif","storeDetails":"/on/demandware.store/Sites-CacauShow-Site/default/Stores-Details?page=storelocator","webProtocolHost":"https://www.cacaushow.com.br","addToCart":"/adicionar-produto","removeFromCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveProductLineItem","addToWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct","removeFromWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=","loginShow":"/login","changeAddress":"/on/demandware.store/Sites-CacauShow-Site/default/Address-Change","removeCoupom":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveCouponLineItem?uuid=","getPaymentMethods":"/pagamentos-adyen","addGiftCertificate":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-Add","checkBalance":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-GetBalance","addCashback":"/on/demandware.store/Sites-CacauShow-Site/default/CheckoutServices-SubmitPayment","updateQuantityCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"};
+window.SitePreferences = {"postalCodesBR":"{\"postalCodesBR\":[\n{\"state\":\"ac\", \"postalFrom\": 69900000, \"postalTo\" : 69999999},\n{\"state\":\"al\", \"postalFrom\": 57000000, \"postalTo\" : 57999999},\n{\"state\":\"am\", \"postalFrom\": 69000000, \"postalTo\" : 69299999},\n{\"state\":\"am\", \"postalFrom\": 69400000, \"postalTo\" : 69899999},\n{\"state\":\"ap\", \"postalFrom\": 68900000, \"postalTo\" : 68999999},\n{\"state\":\"ba\", \"postalFrom\": 40000000, \"postalTo\" : 48999999},\n{\"state\":\"ce\", \"postalFrom\": 60000000, \"postalTo\" : 63999999},\n{\"state\":\"df\", \"postalFrom\": 70000000, \"postalTo\" : 72799999},\n{\"state\":\"df\", \"postalFrom\": 73000000, \"postalTo\" : 73699999},\n{\"state\":\"es\", \"postalFrom\": 29000000, \"postalTo\" : 29999999},\n{\"state\":\"go\", \"postalFrom\": 72800000, \"postalTo\" : 72999999},\n{\"state\":\"go\", \"postalFrom\": 73700000, \"postalTo\" : 76799999},\n{\"state\":\"ma\", \"postalFrom\": 65000000, \"postalTo\" : 65999999},\n{\"state\":\"mg\", \"postalFrom\": 30000000, \"postalTo\" : 39999999},\n{\"state\":\"ms\", \"postalFrom\": 79000000, \"postalTo\" : 79999999},\n{\"state\":\"mt\", \"postalFrom\": 78000000, \"postalTo\" : 78899999},\n{\"state\":\"pa\", \"postalFrom\": 66000000, \"postalTo\" : 68899999},\n{\"state\":\"pb\", \"postalFrom\": 58000000, \"postalTo\" : 58999999},\n{\"state\":\"pe\", \"postalFrom\": 50000000, \"postalTo\" : 56999999},\n{\"state\":\"pi\", \"postalFrom\": 64000000, \"postalTo\" : 64999999},\n{\"state\":\"pr\", \"postalFrom\": 80000000, \"postalTo\" : 87999999},\n{\"state\":\"rs\", \"postalFrom\": 20000000, \"postalTo\" : 28999999},\n{\"state\":\"rn\", \"postalFrom\": 59000000, \"postalTo\" : 59999999},\n{\"state\":\"ro\", \"postalFrom\": 76800000, \"postalTo\" : 76999999},\n{\"state\":\"rr\", \"postalFrom\": 69300000, \"postalTo\" : 69399999},\n{\"state\":\"rs\", \"postalFrom\": 90000000, \"postalTo\" : 99999999},\n{\"state\":\"sc\", \"postalFrom\": 88000000, \"postalTo\" : 89999999},\n{\"state\":\"se\", \"postalFrom\": 49000000, \"postalTo\" : 49999999},\n{\"state\":\"sp\", \"postalFrom\": 1000000, \"postalTo\" : 19999999},\n{\"state\":\"to\", \"postalFrom\": 77000000, \"postalTo\" : 77999999}\n]}","priceTables":"{\"priceTables\":[\n{\"priceBookID\": \"df-sale-prices\", \"states\": [\"df\"]},\n{\"priceBookID\": \"go-sale-prices\", \"states\": [\"go\"]},\n{\"priceBookID\": \"mg-sale-prices\", \"states\": [\"mg\"]},\n{\"priceBookID\": \"pr-sale-prices\", \"states\": [\"pr\"]},\n{\"priceBookID\": \"z1-sale-prices\", \"states\": [\"sp\"]},\n{\"priceBookID\": \"z2-sale-prices\", \"states\": [\"es\",\"ms\",\"mt\",\"rs\",\"sc\"]},\n{\"priceBookID\": \"z3-sale-prices\", \"states\": [\"rj\"]},\n{\"priceBookID\": \"z4-sale-prices\", \"states\": [\"ac\",\"am\",\"ap\",\"rr\"]},\n{\"priceBookID\": \"z5-sale-prices\", \"states\": [\"al\",\"ba\",\"ce\",\"ma\",\"pa\",\"pb\",\"pe\",\"pi\",\"rn\",\"ro\",\"se\",\"to\"]}\n]}"};
+}());
+</script>
+
+
+
+
+
+
+
+
+    <style>
+/*
+.grecaptcha-badge {
+    bottom: 100px !important;
+}*/
+
+/* Move badge to the left side */
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+</style>
+
+<link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/skin/skin.css" />
+
+<input
+    type="hidden"
+    class="js-cart-abandonment-settings"
+    data-is-enabled="true"
+    data-capture-cart-url="/on/demandware.store/Sites-CacauShow-Site/default/CartAbandonment-CaptureCart" />
+
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Etc/GMT+3",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bfjd-CacauShow';
+CQuotient.realm = 'BFJD';
+CQuotient.siteId = 'CacauShow';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'default';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+
+</head>
+<body class="" data-current-store="null">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQSFKTS"
+height="0" width="0" style="display:none;visibility:hidden"
+> </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page" data-action="Page-Show" data-querystring="cid=Regulamentos">
+<header class="it__header">
+    
+
+
+
+
+    
+    <div class="hidden-sm-down">
+        <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="../lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="../parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+    </div>
+    <a href="Regulamentos.html#maincontent" class="skip" aria-label="Ir para conte&uacute;do principal">Ir para conte&uacute;do principal</a>
+<a href="Regulamentos.html#footercontent" class="skip" aria-label="Ir para conte&uacute;do do rodap&eacute;">Ir para conte&uacute;do do rodap&eacute;</a>
+    <div class="header-banner slide-up d-none">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="content">
+                    
+	 
+
+	
+                </div>
+                <div class="close-button">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header container">
+        <div class="it__header--bgContainer">
+            <div class="it__header--bg container-wrapper">
+                <div class="col p-0">
+                    <div class="navbar-header brand">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <a class="logo-home" href="../index.html" title="Cacau Show Home">
+                                <img class="it_header--logo" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw2f40992f/svg/logo_cacau_show.svg" alt="Cacau Show" />
+                            </a>
+                            <div class="d-xl-none d-flex align-items-center">
+                                <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                                    <div class="minicart-total">
+    <a class="minicart-link" href="../carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                                </div>
+                                <button class="navbar-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-menu"></span>
+                                </button>
+                                <button class="close-button" type="button" role="button" aria-label="Fechar menu">
+                                    Fechar menu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="it__search">
+                        <div class="site-search">
+    <form role="search"
+        action="https://www.cacaushow.com.br/busca"
+        method="get"
+        name="simpleSearch"
+    >
+        <input class="form-control search-field"
+            type="text"
+            name="q"
+            value=""
+            placeholder="Buscar Produto"
+            role="combobox"
+            aria-describedby="search-assistive-text"
+            aria-haspopup="listbox"
+            aria-owns="search-results"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-activedescendant=""
+            aria-controls="search-results"
+            aria-label="Insira palavra chave ou n&deg; do item"
+            autocomplete="off" />
+        <button type="reset" name="reset-button" class="reset-button d-none" aria-label="">
+            <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw49c94b21/images/icon-x-lg.svg" alt="" />
+        </button>
+        <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-CacauShow-Site/default/SearchServices-GetSuggestions?q="></div>
+        <input type="hidden" value="default" name="lang">
+    </form>
+</div>
+
+                    </div>
+                </div>
+                <div class="col-xl-5 it__login">
+                    <div class="it__login--options">
+                        
+    <script>
+        sessionStorage.removeItem('userId')
+</script>
+
+    <div class="user">
+        <a class="btn btn-chamoisee" href="../minha-conta.html" role="button"
+            aria-label="Entrar na minha conta"
+        >
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="user-message">Entrar</span>
+        </a>
+    </div>
+
+
+
+<div class="it__changeCep">
+<button class="js-header-postal-code"  data-toggle="modal" data-target="#modal-cep">
+<span class="it__changeCep__address">
+Cacau Show - SP
+</span>
+
+<span class="it__changeCep__btnChange">
+Alterar
+</span>
+
+</button>
+</div>
+
+
+                    </div>
+                    <div class="it__minicart d-none d-xl-block">
+                        <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                            <div class="minicart-total">
+    <a class="minicart-link" href="../carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="it__subNav main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown" id="sg-navbar-collapse">
+            <nav class="navbar navbar-expand-xl cs__main--menu container-wrapper">
+    <div class="menu-group">
+        <ul class="nav navbar-nav">
+            
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/chocolate.html" id="cat_002" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Chocolate</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_002">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/trufas.html" id="cat_002_01" role="menuitem" class="dropdown-link" tabindex="0">Trufas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/tabletes-e-barras.html" id="cat_002_02" role="menuitem" class="dropdown-link" tabindex="0">Tabletes e Barras</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/bombons.html" id="cat_002_03" role="menuitem" class="dropdown-link" tabindex="0">Bombons</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/bolinhas-de-chocolate.html" id="cat_002_04" role="menuitem" class="dropdown-link" tabindex="0">Bolinhas de Chocolate</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw409a49bb/header-Bytes.png" title="Bytes" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw5b864544/header-laCreme.png" title="laCreme" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/chocolate.html" id="cat_002" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Chocolate</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/biscoito.html" id="cat_001" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Biscoito</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_001">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/wafer-e-canudinhos.html" id="cat_001_01" role="menuitem" class="dropdown-link" tabindex="0">Wafer e Canudinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/cookies.html" id="cat_001_02" role="menuitem" class="dropdown-link" tabindex="0">Cookies</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/biscoito-com-chocolate.html" id="cat_001_03" role="menuitem" class="dropdown-link" tabindex="0">Biscoito com Chocolate</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/biscoito/p%C3%83%C2%A3o-de-mel" id="cat_001_04" role="menuitem" class="dropdown-link" tabindex="0">P&atilde;o de Mel</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw227f3a27/header-Cookies.png" title="Cookies" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw06e81c7a/header-Wafer.png" title="Wafer" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/biscoito.html" id="cat_001" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Biscoito</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/cestas-e-presentes.html" id="cat_003" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Cestas e Presentes</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/presentes.html" id="cat_003_02" role="menuitem" class="dropdown-link" tabindex="0">Presentes</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/caixas,-cestas-e-sacolas.html" id="cat_003_03" role="menuitem" class="dropdown-link" tabindex="0">Caixas, Cestas e Sacolas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/cestas-e-presentes/pel%C3%83%C2%BAcias-e-ursinhos" id="cat_003_04" role="menuitem" class="dropdown-link" tabindex="0">Pel&uacute;cias e Ursinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/canecas.html" id="cat_003_06" role="menuitem" class="dropdown-link" tabindex="0">Canecas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/livros.html" id="cat_003_08" role="menuitem" class="dropdown-link" tabindex="0">Livros</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw2506cb45/header-Caneca.png" title="Caneca" /></li>
+</ul>
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/cestas-e-presentes.html" id="cat_003" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Cestas e Presentes</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/moda.html" id="cat_005" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Moda</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_005">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/t%C3%83%C2%AAnis" id="cat_005_01" role="menuitem" class="dropdown-link" tabindex="0">T&ecirc;nis</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/sand%C3%83%C2%A1lias" id="cat_005_02" role="menuitem" class="dropdown-link" tabindex="0">Sand&aacute;lias</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/moda/bolsas.html" id="cat_005_03" role="menuitem" class="dropdown-link" tabindex="0">Bolsas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw34b89fb9/header-Mochila.png" title="Mochila" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw4022ddf8/header-Tenis.png" title="Tenis" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/moda.html" id="cat_005" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Moda</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>P&aacute;scoa</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_010">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa" id="cat_010_01" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa-infantil" id="cat_010_02" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa Infantil</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/bolo-de-p%C3%83%C2%A1scoa" id="cat_010_03" role="menuitem" class="dropdown-link" tabindex="0">Bolo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/chocolates-de-p%C3%83%C2%A1scoa" id="cat_010_04" role="menuitem" class="dropdown-link" tabindex="0">Chocolates de P&aacute;scoa</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">P&aacute;scoa</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+            
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+
+	<div class="html-slot-container">
+    
+        
+            <style type="text/css">
+.it_product-detail__rating{
+  display: none;
+}
+</style>
+<a class="btn-menu btn-sazonal" href="https://www.cacaushow.com.br/categoria/p%C3%A1scoa/ovo-de-p%C3%A1scoa-infantil" role="link" tabindex="0"><span class="btn-menu-text">Ovos Infantis</span> <img alt="" src="../on/demandware.static/-/Sites/default/dwb0ab1ce7/bookmark.svg" title="" /></a>
+        
+    
+</div>
+ 
+	
+            </li>
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+	
+            </li>
+            <li class="nav-item dropdown" role="presentation">
+                <a class="btn-menu btn-cacau-lovers" href="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/CacauLovers-Show" target="_blank"><img alt="" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw5821f791/images/svg/ico_lovers_branca.svg" title="" /><span class="btn-menu-text"> Cacau Lovers </span></a>
+            </li>
+            <div class="hidden-md-up">
+                
+                <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="../lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="../parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+        </div>
+    </div>
+</header>
+
+<div role="main" class="Page-Show" id="maincontent">
+
+    <!-- dwMarker="content" dwContentID="e56c87e74cbb94219ec959e133" -->
+    <doctype html>
+    <meta charset="utf-8">
+      <header>
+          <style>
+  
+              .tituloprincipal{
+              text-align: center;
+              font-weight: bolder;
+              font-size: 25px;
+              background: #352727;
+              color: #cecece;
+              margin: 0 10%;
+              }
+  
+              td, th {
+              text-align: center;
+                  border: 2px black solid;
+              }
+  
+              table {
+              margin: 1% auto;
+              }
+  
+              summary{
+              list-style-type:'';
+              margin: 1% 10% 0% 10%;
+              font-weight: bolder;
+              border-radius: 15px 15px;
+              border-style: outset double;
+              padding-left: 1%;
+              }
+  
+              .enfase{
+              font-weight: bolder;
+              }
+  
+              .interno{
+              border: solid 1px #000;
+              margin: 0 1% 0 1%;
+              text-align: center;
+              padding-top: 1%;
+  
+              }
+  
+              .imagem{
+                width: 40%;
+                height: auto;
+                margin-bottom: 1%;
+              }
+          </style>
+      </header>
+  
+      <body>
+        <br>
+  
+        <P class="tituloprincipal">Nossos Regulamentos</P>
+  
+        <section>
+            <details>
+                <summary>Termo de uso Cacau Lovers <img src="https://img.icons8.com/ios-filled/32/000000/chocolate-bar.png"/></summary>
+                <div class="interno">
+                  <P class="enfase">TERMO DE CONSENTIMENTO DE USO DE DADOS</P>
+                  <P class="enfase">Introdução</P>
+                  <P>Este documento baseia-se no compromisso da Cacau Show com a transparência e o respeito ao tratamento de dados pessoais.</P>
+                  <P>Assim, por meio deste documento, a Cacau Show explica como coletará e utilizará os dados pessoais coletados em decorrência da sua adesão ao Programa Cacau Lovers e descreve os direitos que você tem com relação aos seus dados pessoais.</P>
+                  <P>Importante informar que a Cacau Show refere-se a uma marca nacionalmente conhecida, composta por diversas empresas do grupo, bem como por lojas franqueadas, cada uma das quais é tida como uma entidade legal separada. Portanto, os controladores e operadores de seus dados pessoais serão uma ou mais das entidades da Cacau Show.</P>
+                  <P>A Cacau Show processa dados pessoais para diversos fins, todos amparados por uma base legal, de acordo com a Lei Geral de Proteção de Dados. Nós coletamos esses dados pessoais diretamente de você. Por exemplo: ao efetuar a compra de produtos nas lojas físicas; se você visitar a website www.cacaushow.com.br (nosso Site); se você nos enviar seus dados de contato para receber comunicações de marketing. Portanto, este aviso de privacidade destina-se a cobrir todos os cenários acima mencionados e outros que por ora não podem ser identificados.</P>
+                  <P>Se você tiver alguma dúvida sobre o processamento de seus dados pessoais ou desejar entrar em contato com o responsável pela proteção de dados da rede Cacau Show, não hesite em contatar a equipe de proteção de dados, que encaminhará sua consulta à pessoa ou equipe apropriada dentro de nossa organização. Neste caso, enderece a sua solicitação para: dpo@cacaushow.com.br.</P>
+                  <P class="enfase">Termo de Consentimento:</P>
+                  <P>Daqui por diante, você será denominado neste documento por Concedente.</P>
+                  <P>Neste ato manifesto o meu consentimento para o grupo Cacau Show para a utilização e tratamento dos meus dados pessoais, nos termos da Lei de nº. 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados).</P>
+                  <P>O consentimento aqui previsto é uma manifestação livre, informada e inequívoca na qual o Concedente concorda com o tratamento dos seus dados pessoais para a finalidade específica de pesquisas, promoções, campanhas publicitárias do envio de ofertas, verificação de perfil, comportamento de compras, Programa Cacau Lovers, cujo processamento (ou tratamento) de dados será externo, por meio de empresas parceiras, devidamente habilitadas para tal função.</P>
+                  <P>Para tanto, alguns dados pessoais poderão ser coletados, tais como:</P>
+                  <P>• Seu nome e sobrenome;</P>
+                  <P>• Seu número de Cadastro de Pessoas Físicas – CPF;</P>
+                  <P>• Sua nacionalidade;</P>
+                  <P>• Seu estado civil;</P>
+                  <P>• Sua profissão;</P>
+                  <P>• Seu endereço de e-mail;</P>
+                  <P>• Seu número de telefone;</P>
+                  <P>• Seu perfil na mídia social;</P>
+                  <P>• Seu gênero;</P>
+                  <P>• Sua idade;</P>
+                  <P>• Informações sobre os produtos e serviços que já adquiriu, costuma adquirir e que tem vontade de adquirir;</P>
+                  <P>• Sua maneira de usar e atividades em nossas páginas Cacau Show; e</P>
+                  <p>• Seus interesses como consumidor da marca.</p>
+                  <P>A Concedente autoriza, ainda, a coleta de seus dados pessoais via cookies ou técnicas semelhantes, incluindo, mas não se limitando a:</P>
+                  <P>• Seu endereço de IP;</P>
+                  <P>• Seu ID de cookie;</P>
+                  <P>• Seu navegador web;</P>
+                  <P>• Sua localização;</P>
+                  <P>• As páginas que você visita nos nossos sites;</P>
+                  <P>• Os anúncios que você tenha visto ou clicado;</P>
+                  <P>• etc.</P>
+                  <P>O Concedente autoriza também a coleta de seus dados pessoais através de diferentes outras formas, incluindo, mas não se limitando a:</P>
+                  <P>• Cadastrando-se como parceiro, prestador de serviços ou, tão somente, cliente;</P>
+                  <P>• Registrando uma compra ou um serviço;</P>
+                  <P>• Suas comunicações com a Cacau Show. Elas podem ser relacionadas a produto, serviços ou atividades a serem desenvolvidas e incluir o conteúdo de suas perguntas ou solicitações que você nos fez;</P>
+                  <P>• Comunicando-se com um de nossos representantes por e-mail, telefone ou por escrito;</P>
+                  <P>• Participando de uma promoção, jogo ou competição;</P>
+                  <P>• Participando de uma atividade de mídia social relacionada a uma promoção da Cacau Show, por exemplo, clicando em "curtir" ou "compartilhar";</P>
+                  <P>• Solicitando o recebimento de mensagens em seu telefone celular/dispositivo;</P>
+                  <P>• Assinando um eventual newsletter da Cacau Show;</P>
+                  <P>• Enviando-nos um cartão de resposta preenchido, que acompanha seu produto Cacau Show;</P>
+                  <P>• Participando voluntariamente de testes de produtos ou pesquisas;</P>
+                  <P>• Inscrições sociais, por exemplo, usando suas credenciais do Facebook ou LinkedIn para criar uma conta ou para conectar-se;</P>
+                  <P>• Quando estiver usando produtos e/ou serviços relacionados à Cacau Show e/ou aplicativos, você pode ser perguntado se deseja compartilhar dados com a Cacau Show, por exemplo, compartilhar seus dados de uso ou de localização;</P>
+                  <P>• Cookies colocados em seu computador ou dispositivo móvel ao visitar nossos sites;</P>
+                  <P>• Audição social: a Cacau Show pode buscar na internet conteúdo relevante e publicamente disponível e usá-lo para aperfeiçoar seus produtos ou serviços, solucionar problemas do consumidor e fornecer marketing direcionado.</P>
+                  <P>O processamento (ou tratamento) dos dados pessoais ora consentidos somente ocorrerá pelas razões previamente comunicadas, de acordo com as finalidades específicas. Se os usarmos por outras razões, medidas adicionais de proteção a dados serão implementadas segundo exigências da lei.</P>
+                  <P>A pessoa titular dos dados, ora Concedente, poderá solicitar ao grupo Cacau Show e está salvo impedimento legal, vai salvaguardar os direitos da Concedente de ter acesso aos dados pessoais que lhe digam respeito, bem como a sua retificação ou a sua eliminação, a limitação do tratamento e o direito de se opor ao tratamento, bem como do direito à portabilidade dos dados. Para tanto, poderá se valer do e-mail dpo@cacaushow.com.br ou, caso prefira encaminhar uma correspondência física para o endereço: Estrada Antiga de Itu, nº. 140, bairro Estância São Francisco, Município de Itapevi, Estado de São Paulo, CEP 06695-570.</P>
+                  <P>Ainda, a Concedente tem o direito de retirar o consentimento dado, em qualquer momento, sem comprometer a licitude do tratamento já efetuado com base no cumprimento de obrigações legais ou com base no consentimento previamente dado. O opt-out (pedido de exclusão de dados) poderá ser feito na website www.cacaushow.com.br/cacau-lovers. O Concedente tem ciência de que poderá endereçar reclamação sobre o tratamento de seus dados junto a Autoridade Nacional de Proteção de Dados.</P>
+                  <P>O grupo Cacau Show irá comunicar ou compartilhar em parte ou na sua totalidade os dados pessoais da Concedente a entidades públicas e ou privadas sempre que tal ordem decorra de obrigação legal, seja necessário para cumprimento deste ou outros contratos e para proteger os interesses da Cacau Show e demais empresas do grupo em eventuais demandas judiciais e arbitrais.</P>
+                  <P>Além das hipóteses acima, os dados poderão ser compartilhados com nossos parceiros comerciais, prestadores de serviços e fornecedores, por exemplo, com empresas que: (i) atuam com marketing, publicidade, mídias digitais e pesquisas; (ii) oferecem serviços de hospedagem de site, segurança da informação e, armazenamento de dados; (ii) processam e operacionalizam meios de pagamentos; e (iii) prestam serviço de transporte e logística; entre outros.</P>
+                  <P>O grupo Cacau Show irá armazenar os dados do Concedente pelo prazo razoável necessário ao atendimento da finalidade para qual eles foram coletados, salvo os casos nos quais estes dados sejam necessários para o cumprimento de obrigações legais, regulatórias e contratuais ou para o exercício de nossos direitos em demandas judiciais ou arbitrais.</P>
+                  <P>Por fim, o grupo Cacau Show reconhece e garante que leva a sério a responsabilidade de proteger os dados pessoais confiados contra: perda, mau uso ou acesso não autorizado. A Cacau Show usa uma variedade de tecnologias de segurança e de procedimentos organizacionais para ajudar a proteger os dados pessoais ou não, por ela tratados. Portanto, os dados aqui concedidos serão armazenados, tratados para a finalidade específica e mantidos com toda a segurança possível.</P>
+                  <P>Em caso de violação de dados pessoais o grupo Cacau Show notificará esse fato à Comissão Nacional de Proteção de Dados nos termos e condições previstos na lei. Se essa violação for suscetível de implicar um elevado risco para os direitos e liberdades do titular, tal fato lhe será comunicado, nos termos e condições previstos na lei.</P>
+                  <P class="enfase">Disposições Finais:</P>
+                  <P>A Cacau Show efetuará atualizações e ajustes ao Termo de Consentimento de Dados periodicamente, de acordo com o necessário para refletir as suas práticas de privacidade e proteção de dados pessoais, bem como eventuais atualizações regulatórias. Por tal razão, a data da última atualização aparecerá sempre ao final desta Política, sendo que em caso de atualização relevante, daremos a devida transparência em relação ao conteúdo alterado.</P>
+                  <P>Por fim, reforçamos que o titular de dados pessoais é inteiramente responsável pelo sigilo de suas informações pessoais, sendo vedado o compartilhamento de seu login, senhas ou qualquer tipo de credencial de acesso ou autenticação junto à Cacau Show.</P>
+                  <P>Qualquer outra dúvida relacionada à privacidade e proteção de dados pessoais deverá ser endereçada aos cuidados de André Boschetti Oliva, notadamente “Encarregado de tratamentos de dados pessoais da Cacau Show (“DPO”)”, por meio de um dos contatos abaixo:</P>
+                  <P>dpo@cacaushow.com.br;</P>
+                  <P>Estrada Antiga de Itu, nº. 140, bairro Estância São Francisco, Município de Itapevi, Estado de São Paulo, CEP 06695-570.</P>
+                  <P>Atualizado em 08 de outubro de 2020.</P>
+                </div>
+              </details>
+        </section>
+  
+        <section>
+          <details>
+              <summary>Regulamento Cacau Lovers <img src="https://img.icons8.com/ios-filled/32/000000/chocolate-bar.png"/></summary>
+              <div class="interno">
+                <P class="enfase">REGULAMENTO DO PROGRAMA CACAU LOVERS</P>
+                <p>Atualizado em 24 de janeiro de 2023</p>
+                <p class="enfase">I. Do Objeto</p>
+                <p><strong>1.</strong> As presentes disposições visam regular o Programa de Fidelidade da Cacau Show – Cacau Lovers, doravante designado Programa, por meio do qual podem ser atribuídos preços diferenciais, combos promocionais e experiências diversas aos clientes regularmente cadastrados.</p>
+                <p><strong>2.</strong>O Programa é instituído pela CACAU FRANQUIA MASTER ASSESSORIA EM NEGÓCIOS LTDA., pessoa jurídica de direito privado, inscrita no CNPJ/MF sob nº 26.607.078/0001-62, com sede e foro na Estrada Antiga de Itu, nº 437, Sala 07, Estância São Francisco, Município de Itapevi, Estado de São Paulo, CEP 06695-570, juntamente com as demais empresas do grupo Cacau Show</p>
+                <P class="enfase">II. Dos Participantes do Programa</P>
+                <p><strong>3.</strong> O Programa destina-se a todas as pessoas físicas que tenham idade mínima de 16 (dezesseis) anos de idade e que, cumulativamente, (a) sejam clientes da rede Cacau Show e (b) concordem irrestritamente com todas as disposições contidas no presente regulamento. A pessoa física que se enquadrar nas disposições acima será denominada Participante.</p>
+                <P><strong>3.1.</strong> A pessoa física que tenha idade igual ou maior de 16 (dezesseis anos), mas não tenha atingido a maioridade (18 – dezoito – anos), deverá estar assistida por seu(s) responsável(is) para a realização do cadastro no Programa. Referida assistência será comprovada por meio do aceite efetuado pelo responsável do menor na aba de notificação do site do programa, assim que o menor efetuar a tentativa de cadastro. O responsável pelo menor deve estar cadastrado no programa Cacau Lovers para realizar a aprovação.</P>
+                <P><strong>3.2.</strong> Os menores somente poderão efetuar seu cadastro no programa “Cacau Lovers” por meio do site “lovers.cacaushow.com.br”, sendo que indicarão os dados de seu(s) representante(s) legal(is) no momento do cadastro, a fim de que seja possível o envio da mensagem para o aceite. A Cacau Show não se responsabiliza pelo recebimento de dados incorretos, tampouco pelo aceite efetuado por terceiros desautorizados.</P>
+                <P><strong>3.3.</strong> Além dos consumidores em geral, conforme disposto no item 3, podem participar do programa de fidelidade com direito somente às promoções e aos preços exclusivos dos produtos, excluindo então o direito ao acúmulo de cacaus e resgate de vantagens: (i) os revendedores devidamente cadastrados da marca, desde que as respectivas compras de produtos não tenham sido efetuadas no canal da venda direta, e (ii) qualquer franqueado da marca, colaboradores das empresas do grupo CACAU SHOW, colaboradores das lojas próprias ou das lojas franqueadas da rede.</P>
+                <P><strong>3.4.</strong> Para obtenção de benefícios como o preço exclusivo dos produtos Cacau Show, ficam excluídos os canais de venda a seguir: (i) vending machine, (ii) iFood, (iii) carrinho de venda corporativa, (iv) convênio, (v) parceiros Cacau Show, (vi) marketplace de parceiros, e (vii) totem de lojas.</P>
+                <P><strong>3.5.</strong> Para obtenção de benefícios como o acúmulo de Cacaus e, consequentemente, o resgate de vantagens, ficam excluídos os canais de venda a seguir: (i) venda direta, (ii) vending machine, (iii) iFood, (iv) venda corporativa, (v) carrinho de venda corporativa, (vi) festas e eventos, (vii) convênio, (viii) parceiros Cacau Show, (ix) marketplace de parceiros, e (x) totem de lojas.</P>
+                <P class="enfase">III.Da Adesão ao Programa</P>
+                <p><strong>4.</strong> A adesão ao Programa se dará por meio do aceite deste Regulamento e, consequentemente, do aceite ao Termo de Consentimento para uso de dados relacionados ao presente instrumento, os quais estão disponibilizados na plataforma digital e lojas físicas da marca Cacau Show.</p>
+                <p><strong>4.1.</strong> Os dados requeridos para realização do cadastro no programa Cacau Lovers são: nome completo, CPF, data de nascimento, e-mail e telefone celular, além da criação de uma senha para acesso à plataforma do programa.</p>
+                <p><strong>4.2.</strong> Após confirmação do cadastro ao Programa “Cacau Lovers”, poderá levar até 24 (vinte e quatro) horas para que os benefícios e descontos sejam aplicáveis ao Participante.</p>
+                <p><strong>4.3.</strong> A fruição de benefícios e descontos estarão disponíveis somente para Participantes regularmente cadastrados, e só serão efetivados assim que a participação ao Programa for regularizada mediante o preenchimento de todas as informações cadastrais.</p>
+                <P class="enfase">IV.Da Obtenção de Benefícios</P>
+                <p><strong>5.</strong> Para obter benefícios no Programa, o Participante deverá efetuar compras nos estabelecimentos comerciais físicos ou virtuais da marca Cacau Show, informando no momento do pagamento que está cadastrado no Programa Cacau Lovers, e informando, obrigatoriamente, o número de seu CPF (cadastro de pessoas físicas).</p>
+                <P class="enfase">V.Da Forma de Pontuação</P>
+                <p><strong>6.</strong> Na compra de quaisquer produtos da marca Cacau Show, no site www.cacaushow.com.br, ou produtos e serviços nas lojas físicas da marca, a cada R$ 20,00 em compras, em uma única nota/cupom fiscal, o Participante receberá 1 (um) Cacau no programa para acumular e resgatar vantagens, chamadas de momentos especiais, que podem ser, mas não somente: experiências, ofertas, promoções, produtos, com ou sem desconto, conforme condições estabelecidas nas regras de resgate e neste documento. Os ‘Cacaus’ serão creditados na conta do participante em até 7 dias após confirmação da compra. Para obtenção dos Cacaus é obrigatório informar o número do CPF no momento do pagamento. Será considerado, para fins de obtenção dos Cacaus, o valor líquido da nota/cupom fiscal, ou seja, descontos referentes a ofertas, vouchers, cupons, entre outros abatimentos, não serão computados para fins do referido benefício.</p>
+                <p><strong>6.1.</strong> As compras feitas por APP de delivery não dão direito ao acúmulo de Cacaus.</p>
+                <p><strong>6.2.</strong> A Cacau Show reserva-se no direito de suspender o acúmulo de Cacaus mencionado no item acima ao longo de campanhas comemorativas e/ou ações sazonais, sem aviso prévio, o que poderá ser aplicável à totalidade dos produtos ou categoria específica.</p>
+                <p><strong>7.</strong>Os Cacaus acumulados desde 07 de julho de 2022, passíveis de resgate, serão válidos por até 04 meses contados da data que são creditados na conta do Participante do Programa, sem possibilidade de extensão do prazo, salvo por período específico, informado previamente pela Cacau Show.</p>
+                <p><strong>7.1.</strong> Os Cacaus somente serão computados com o cadastro completo no Programa Cacau Lovers, incluindo o aceite dos termos do Programa. Caso a inscrição inicial tenha acontecido em uma das lojas Cacau Show, o participante deve acessar a plataforma digital e completar o cadastro.</p>
+                <p><strong>8.</strong> Os Participantes do programa são classificados em 04 níveis diferentes, que são: Crush, Paquera, Paixão e Amor. Estes níveis são definidos com base no consumo dos últimos 12 meses nos produtos da marca e serviços, tanto nas lojas Cacau Show como no site www.cacaushow.com.br, contados a partir da data vigente.</p>
+                <p><strong>8.1.</strong> Quando o Participante informa o número do CPF, o valor total da compra é contabilizado para que sejam computados os pontos passíveis de acúmulo e, consequentemente, possível alteração de nível no programa. Neste caso, o Participante ganha 1 ponto a cada R$ 1,00.</p>
+                <P><strong>8.2.</strong> Os referidos pontos servem somente para que o Participante possa subir de nível no programa e não estão relacionados com os Cacaus obtidos em mecânica separada.<P>
+                <P><strong>8.3.</strong> Para subir de nível no programa, o Participante precisa atingir o gasto mínimo por nível no período de 12 meses. O gasto mínimo para cada nível pode ser atingido em uma ou mais compras nesse período, e se dará da soma das compras em cada uma das notas/cupons fiscais. O gasto mínimo para cada nível do programa é (I) Crush: R$ 0,00; (II) Paquera: R$ 80,00; (III) Paixão: R$ 300,00; e (IV) Amor: R$ 900,00. Em cada nível, o Participante terá acesso ao resgate de diferentes vantagens e benefícios dentro do programa Cacau Lovers.</P>
+                <P><strong>8.4.</strong> Se no período de 12 meses anteriores ao dia atual, a soma do consumo do cliente Participante diminuir, e por conseguinte não mais atingir o gasto mínimo total para algum dos níveis, o cliente Participante poderá descer de nível conforme for a soma do consumo no período citado.<P>
+                <p><strong>9.</strong> A consulta ao saldo de Cacaus e do nível do Participante deverá ser feita através do site do Programa em lovers.cacaushow.com.br. Já outras informações pertinentes ao Programa poderão ser consultadas por meio de um ou mais dos seguintes canais de comunicação:</p>
+                <P>(a) Internet;</P>
+                <P>(b) Lojas Físicas, direto no caixa;</P>
+                <p>(c) Quaisquer outros canais de comunicação que proporcionem aos Participantes o acesso às informações do Programa.</p>
+                <p><strong>10.</strong>Os Cacaus e vantagens obtidos no Programa serão, pessoais, intransferíveis e inegociáveis, estando, portanto, incondicionalmente vinculados ao titular do cadastro (cliente Cacau Lovers). A negociação dos Cacaus do Programa para obtenção de vantagem, financeira ou não, implicará no cancelamento deles e na exclusão dos envolvidos do Programa.</P>
+                <p><strong>11.</strong> Na hipótese de o Participante não promover o aceite expresso quanto à adesão ao regulamento e/ou à concordância no recebimento de comunicação referente ao Programa, por qualquer meio digital, estarão bloqueados os benefícios previstos no presente Capítulo.</p>
+                <p><strong>11.1.</strong> O bloqueio ao acúmulo e aproveitamento dos benefícios ao Programa previstos na cláusula 11 não implica em qualquer indenização ou restituição sob responsabilidade da Cacau Show em face do Participante.</p>
+                <P class="enfase">VI.Da Troca dos Cacaus em Vantagens</P>
+                <p><strong>12.</strong> A troca dos Cacaus por vantagens está sujeita às seguintes condições:</P>
+                <p><strong>12.1.</strong> À solicitação da utilização dos Cacaus pelo titular do cadastro;</P>
+                <p><strong>12.2.</strong> Os Cacaus devem estar dentro do prazo de validade;</p>
+                <p><strong>12.3.</strong> O Participante deve possuir o número mínimo de Cacaus necessário para a obtenção da vantagem pretendida, conforme informado nas cláusulas anteriores;</p>
+                <p><strong>12.4.</strong> Em caso de resgate nas lojas físicas, o Participante também deve apresentar informações de segurança, tais como, mas não somente: dia e mês do aniversário, ano do nascimento, últimos quatro dígitos do celular.</p>
+                <p><strong>13.</strong> Na troca dos Cacaus, serão utilizados primeiro os Cacaus obtidos há mais tempo em detrimento dos mais recentes.</p>
+                <p><strong>14.</strong> A Cacau Show poderá alterar a qualquer momento as regras de pontuação, o número de Cacaus necessários para a troca por determinada vantagem, assim como as vantagens poderão ser alteradas indistintamente.</P>
+                <p><strong>14.1</strong> As vantagens do programa estão sujeitas a alteração de acordo com a disponibilidade ou liberalidade das partes responsáveis por seu fornecimento ou organização.</P>
+                <P class="enfase">VII.Do Recebimento da Vantagem</P>
+                <p><strong>16.</strong> Os Cacaus obtidos poderão ser trocados pelo Participante por (i) produtos e/ou serviços com ou sem desconto da marca Cacau Show conforme disponibilidade em ações especiais e não necessariamente perenes, (ii) por experiências, que serão divulgadas nos canais oficiais da marca, (iii) por descontos exclusivos, ou (iv) por cupons ou vouchers. Em todos os casos, o Participante deve se atentar aos locais relacionados à cada vantagem e às regras de resgate.</p>
+                <p><strong>16.1</strong> Todas as vantagens ofertadas no programa poderão sofrer alterações à critério da Cacau Show, assim compreendidas como exclusões, postergações e/ou variação na quantidade disponibilizada.</p>
+                <p><strong>16.2</strong>  A Cacau Show ainda se reserva ao direito de modificar a quantidade de Cacaus necessários ao resgate de cada vantagem a seu único e exclusivo critério, não incorrendo ônus algum aos participantes que resgataram tais vantagens com pontuação maior no momento do resgate.</p>
+                <p><strong>16.3</strong> No eventual resgate de uma vantagem, o participante deverá se atentar às datas de utilização de tais vantagens, assim como a data de vencimento do voucher ou benefício resgatado. </p>
+                <p><strong>16.4</strong> Na hipótese de o prazo de fruição da vantagem ter-se expirado, em hipótese alguma os Cacaus utilizados para o resgate serão restituídos na conta do Participante.</p>
+                <p><strong>17.</strong> Para utilização da vantagem resgatada, o Participante precisará informar o número do seu CPF e nome completo. Não será possível o resgate de alguma vantagem caso o saldo acumulado de Cacaus do participante não seja suficiente, conforme quantidade de Cacaus exigida para cada vantagem.</P>
+                <p><strong>18.</strong> Em nenhuma hipótese haverá a possibilidade de troca dos Cacaus obtidos no Programa por moeda corrente. As trocas serão efetivadas exclusivamente por vantagens conforme especificado na cláusula 15.</p>
+                <p><strong>19.</strong> Ocorrendo a perda do direito ao recebimento dos benefícios oferecidos pelo Programa, o Participante não terá direito ao recebimento de qualquer indenização e/ou compensação.</P>
+                <P class="enfase">VIII.Do Prazo de Validade do Programa Cacau Lovers</P>
+                <p><strong>20.</strong> O Programa Cacau Lovers será aplicado por prazo indeterminado. Caso a Cacau Show não tenha interesse na continuidade do programa, deverá informar os Participantes, com prazo mínimo de 30 (trinta) dias.</p>
+                <P class="enfase">IX. Da Não Vinculação do Programa Com Outras Promoções</P>
+                <P><strong>21.</strong> O Programa não está vinculado a qualquer outra promoção presente ou futura a ser desenvolvida pela Cacau Show.</P>
+                <P><strong>22.</strong> Assim sendo, a Cacau Show poderá desenvolver outros programas e/ou campanhas que se utilizem de mecanismo assemelhado ao contido no presente regulamento, sem que este fato implique na cumulação dos benefícios decorrentes de um e de outro.</P>
+                <P class="enfase">X.Das Promoções Especiais</P>
+                <P><strong>23.</strong> Sem prejuízo das demais disposições contidas no presente regulamento e integrantes do Programa, a Cacau Show poderá, a qualquer momento, desenvolver promoções e/ou experiências aos Participantes do programa, respeitando a classificação de Cacaus (do menor para o maior, no período de quatro meses).</P>
+                <P><strong>24.</strong> Tais experiências serão disponibilizadas para consulta no site www.lovers.cacaushow.com.br ou nos demais canais de comunicação utilizados pela Cacau Show, ao seu único e exclusivo critério.</P>
+                <P><strong>25.</strong>A Cacau Show poderá criar ainda, mecânicas diferentes para obtenção de pontos ou Cacaus, a seu critério, como forma de promover campanhas, produtos, serviços ou outros atributos da marca, podendo estas mecânicas ter prazo de validade determinado, ou não, a critério da Cacau Show.</P>
+                <P class="enfase">XI. Novas Parcerias</P>
+                <P><strong>26.</strong> A Cacau Show poderá, a qualquer momento, agregar parceiros ao Programa, parceiros, estes que também poderão conferir eventualmente vantagens ao Participante.</P>
+                <P><strong>27.</strong> Nesta hipótese, a Cacau Show definirá as normas aplicáveis a estas possíveis vantagens a serem conferidas por estes parceiros, ficando certo e ajustado que na hipótese de o Participante obter uma vantagem oferecida por este parceiro, o Participante estará automaticamente aderindo às normas aplicáveis a estas situações.</P>
+                <P><strong>28.</strong> Na hipótese de o Participante resgatar uma vantagem oferecida por um parceiro, a Cacau Show não poderá ser responsabilizada pelo serviço prestado ou produto oferecido.</P>
+                <P class="enfase">XII. Da Atualização de Dados Cadastrais</P>
+                <P><strong>29.</strong> Cada Participante é responsável pela integridade, atualização e correção dos dados cadastrais informados quando da adesão ao Programa Cacau Show.</P>
+                <P><strong>30.</strong> Da mesma forma, cada Participante é responsável pela atualização de seus dados cadastrais quando houver alteração no decorrer do Programa. A Cacau Show não se responsabilizará em nenhuma hipótese pela perda dos Cacaus ou do direito de utilização dos Cacaus quando decorrente da falta de atualização dos dados cadastrais do Participante.</P>
+                <P class="enfase">XIII. Da utilização das informações cadastrais do Participante</P>
+                <P><strong>31.</strong> Ao aderir ao Programa e por meio do Termo de Consentimento e Uso de Dados Pessoais o Participante autoriza expressamente a Cacau Show a utilizar seus dados pessoais para a oferta de produtos e ações de publicidade vinculadas à marca Cacau Show.</P>
+                <P><strong>31.1.</strong> Ao revogar o termo de consentimento para uso dos dados pessoais, o Participante estará ciente da perda do direito ao acúmulo de pontos, Cacaus e resgate de vantagens no programa, dentre outros benefícios aplicáveis.</P>
+                <P><strong>32.</strong> Caberá exclusivamente ao Participante manifestar expressamente à Cacau Show seu desinteresse em continuar a receber as ofertas de produtos, marketing direto e publicidade. Nesse sentido, o aceite do Termo de consentimento para uso de dados pode ser revogado a qualquer momento através da página pessoal de cadastro na plataforma digital do programa Cacau Lovers.</P>
+                <P><strong>33.</strong> As informações dos Participantes não serão encaminhadas ou disponibilizadas a pessoas ou instituições não previstas neste regulamento, salvo autorização expressa do Participante.</P>
+                <P class="enfase">XIV. Do Cancelamento da Adesão</P>
+                <P><strong>34.</strong> Serão causas de exclusão no Programa Cacau Lovers as seguintes situações: </P>
+                <P>(i)	contas que não tiverem qualquer acúmulo ou resgate de Cacaus, por período superior a 24 meses;</P>
+                <P>(ii)	prestação de qualquer informação falsa pelo Participante à Cacau Show; </P>
+                <P>(iii)	verificação de que os Cacaus foram obtidos de forma fraudulenta;</P>
+                <P>(iv)	falecimento do Participante;</P>
+                <P>(v)	término do Programa; e</P>
+                <P>(vi)	quando da inobservância, total ou parcial, pelo Participante dos termos do presente regulamento.</P>
+                <P><strong>35.</strong> Sendo cancelada, em qualquer momento, a adesão do Participante ao Programa, serão automaticamente cancelados todos os benefícios acumulados (Cacaus, Pontos, Experiências Resgatadas e Descontos) pelo Participante. O cancelamento à adesão ao Programa ocasionará, inclusive, a perda do direito de desfrutar de experiências resgatadas e que ainda não tiverem sido usufruídas.</P>
+                <P><strong>36.</strong> O cancelamento da conta Cacau Lovers não implica em qualquer indenização ou restituição sob responsabilidade da Cacau Show em face do Participante.</P>
+                <p><strong>37.</strong> O Participante será comunicado quanto ao cancelamento do Programa com pelo menos 30 dias de antecedência. A comunicação ocorrerá exclusivamente pelos meios de contato fornecidos diretamente pelo Participante à Cacau Show, independentemente de anuência expressa.</p>
+                <P class="enfase">XV. Da Alteração do Presente Regulamento</P>
+                <P><strong>38.</strong> Os termos do presente regulamento poderão ser alterados pela Cacau Show a qualquer tempo. Essas eventuais alterações serão disponibilizadas por meio da internet no endereço www.lovers.cacaushow.com.br .</P>
+                <P class="enfase">XVI. Do Cancelamento do Programa</P>
+                <P><strong>39.</strong> O Programa poderá ser cancelado a qualquer momento a critério exclusivo da Cacau Show. Neste caso, o cancelamento será divulgado por meio da internet no endereço www.lovers.cacaushow.com.br, com 30 (trinta) dias de antecedência, de forma que os Participantes possam, se quiserem, adotar as medidas necessárias à troca dos Cacaus em eventuais vantagens disponíveis com aquele número de Cacaus existentes e válidos.</P>
+                <P><strong>40.</strong> Finalizado o período de 30 (trinta) dias mencionado no item anterior, os Cacaus não serão mais válidos e não será possível trocá-los por vantagens. Nesta hipótese, dentre outras previstas no presente regulamento, a Cacau Show estará isenta de quaisquer responsabilidades em decorrência da falta de troca dos Cacaus pelo Participante.</P>
+                <P class="enfase">XVII. Dos casos omissos</P>
+                <P><strong>41.</strong>  Os casos omissos no presente regulamento serão resolvidos por uma Comissão composta por membros da administração da Cacau Show.</P>
+                <P><strong>42.</strong> Da mesma forma, as dúvidas, sugestões ou quaisquer outros assuntos relacionados ao Programa deverão ser encaminhados a Comissão acima mencionada por meio do local destinado ao atendimento dos Participantes do Programa Cacau Lovers, nas dependências da Cacau Show.</P>
+                <P class="enfase">XVIII. Do Foro</P>
+                <P><strong>43.</strong> Fica eleito o Foro da Comarca de Itapevi, Estado de São Paulo, para dirimir quaisquer dúvidas ou controvérsias relativas a este Regulamento.</P>
+                </div>
+            </details>
+        </section>
+  
+        <section>
+          <details>
+            <summary>Regulameto Promoção Palito Premiado <img width="32" height="32" src="https://img.icons8.com/wired/32/ice-pop-pink--v1.png" alt="ice-pop-pink--v1"/></summary>
+            <div class="interno">
+              <p><strong>CERTIFICADO DE AUTORIZAÇÃO SPA/MF Nº. 05.037598/2024</strong></p>
+              <p class="enfase">1.	EMPRESA PROMOTORA:</p>
+              <p>1.1.	Empresa Mandatária</p>
+              <p>1.1.1.	Razão Social: IBAC Indústria Brasileira de Alimentos e Chocolates Ltda.</p>
+              <p>1.1.2.	Endereço: Estrada Velha de Itu, 437 B – Itapevi/SP – 06695-570</p>
+              <p>1.1.3.	CNPJ: 61.472.205/0001-64</p>
+              <p>1.2.	Aderente</p>
+              <p>1.2.1.	Razão Social: Franquia Show Assessoria em Negócios Ltda</p>
+              <p>1.2.2.	Endereço: Estrada Velha de Itu, 140 – Sala 03 – Estância São Francisco – Itapevi/SP – 06695-570</p>
+              <p>1.2.3.	CNPJ: 07.194.309/0001-09</p>
+              <p><strong>2.	CRITÉRIO DE PARTICIPAÇÃO:</strong></p>
+              <p>2.1.	A promoção é válida e destinada a todos consumidores pessoas físicas, residentes e domiciliados em território nacional, e que preencham as demais condições de participação estabelecidas neste regulamento.</p>
+              <p>2.2.	Para participar da promoção “Palito Premiado 2025 - Cacau Show”, o consumidor interessado deverá adquirir 1 (um) Gelato (picolé) da Cacau Show, no período de 30 de dezembro de 2024 à 29 de dezembro de 2025, ou enquanto durar o estoque de brindes, para ter direito de participar na presente promoção.</p>
+              <table>
+                <tr>
+                  <th>Descrição de Cada Prêmio</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Lanut Coberto Pistache 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete LaCreme coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Cookies N Cream coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Lanut coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete LaCreme Mezzo coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Dreams Torta de Maracujá 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Intensidade coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Dreams Torta de Morango 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete LaCreme  Kids coberto 40g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete LaCreme  Zero coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete LaCreme  Kids coberto 70g</th>
+                </tr>
+                <tr>
+                  <th>Sorvete Biscoiteria coberto 70g</th>
+                </tr>
+              </table>
+              <p>2.3.	Após adquirir o produto participante da promoção, o consumidor deverá abrir e consumir o Gelato para verificar se o palito está premiado ou não com um prêmio da promoção, sendo considerado contemplado o palito premiado que possuir a informação “Palito Premiado” e a informação a respeito do brinde com o qual foi contemplado, caracterizando-se assim a dependência exclusiva do acaso de acordo com o artigo 24, parágrafo 1º, do Decreto 70.951 de 09 de agosto de 1972.</p>
+              <p>2.3.1.	Serão considerados palito premiados, com um dos dizeres abaixo:</p>
+              <p>•	Você ganhou 1 gelato gratís Cacau Show</p>
+              <p>•	Você ganhou 5 Cacaus, acesse o site Lovers</p>
+              <p>•	Você ganhou 10 Cacaus, acesse o site Lovers</p>
+              <p>•	Você ganhou 25 Cacaus, acesse o site Lovers</p>
+              <p>•	Você ganhou 50 Cacaus, acesse o site Lovers</p>
+              <p>2.3.2.	Em caso de contemplação, o participante deverá apresentar/entregar o palito premiado em uma das lojas Cacau Show que possua o brinde em estoque, para o devido recebimento do prêmio descrito, sendo que o palito premiado será recolhido pela empresa promotora, não podendo ser reapresentado. Em hipótese alguma o prêmios será entregue fora da loja Cacau Show ou Revendedor autorizado Cacau Show.</p>
+              <p>2.3.3.	O palito premiado é ao portador, ou seja, somente terá direito ao prêmio o consumidor que apresentar o palito premiado na loja Cacau Show.</p>
+              <p>2.3.4.	Apenas serão considerados válidos os palitos produzidos e distribuídos pela empresa promotora, bem como legíveis e sem qualquer dano.</p>
+              <p>2.4.	Durante o período da promoção serão produzidos 1.917.563 (um milhão novecentos e dezessete mil quinhentos e sessenta três) produtos participantes da promoção, distribuídos de forma aleatória nos postos de vendas presentes na área de execução da promoção, dentre os quais, 120.300 (cento e vinte mil e trezentos) produtos conterão prêmios, sendo que a proporção de palitos premiados é de 1/16.</p>
+              <p>2.4.1.	Caso todos os prêmios sejam distribuídos antes do término, a campanha será considerada encerrada, dando-se ampla divulgação aos consumidores.</p>
+              <p>2.5.	Os participantes não poderão utilizar-se de meios escusos para adquirir o produto para participar desta promoção e/ou de mecanismos que criem condições de cadastramento irregular, desleais ou que atentem contra os objetivos e condições de participação previstas neste regulamento, qual seja, a compra do Gelato Cacau Show em qualquer loja Cacau Show. As situações descritas, quando identificadas, serão consideradas como infração aos termos do presente regulamento, ensejando o impedimento da participação e/ou o imediato cancelamento da inscrição do participante, sem prejuízo, ainda, das medidas cabíveis e/ou ação de regresso a ser promovida pela promotora em face do infrator.</p>
+              <p><strong>3.	PRÊMIO:</strong></p>
+              <p>3.1.	Serão distribuídos 120.300 (cento e vinte mil e trezentos) prêmios na promoção “Palito Premiado - 2025”, conforme descrito abaixo:</p>
+              <table>
+                <tr>
+                  <th>Descrição de cada prêmio</th>
+                  <th>Quantidade de contemplados</th>
+                </tr>
+
+                <tr>
+                  <th>01 (um) Gelato Cacau Show</th>
+                  <th>110.000</th>
+                </tr>
+
+                <tr>
+                  <th>05 (cinco) pontos Cacaus no programa Cacau Lovers</th>
+                  <th>6.000</th>
+                </tr>
+
+                <tr>
+                  <th>10 (dez) pontos Cacaus no programa Cacau Lovers</th>
+                  <th>3.000</th>
+                </tr>
+
+                <tr>
+                  <th>25 (vinte e cinco) pontos Cacaus no programa Cacau Lovers</th>
+                  <th>1.000</th>
+                </tr>
+
+                <tr>
+                  <th>50 (cinquenta) pontos Cacaus no programa Cacau Lovers</th>
+                  <th>300</th>
+                </tr>
+            </table>
+            <p><strong>4.	PREMIAÇÃO TOTAL:</strong></p>
+              <table>
+                <tr>
+                  <th>Quantidade total de prêmios</th>
+                  <th>Valor total da promoção</th>
+                </tr>
+
+                <tr>
+                  <th>120.300</th>
+                  <th>R$ 598.900,00</th>
+                </tr>
+              </table>
+
+              <p><strong>5.	CRITÉRIOS DE DESCLASSIFICAÇÃO:</strong></p>
+              <p>5.1.	A participação nesta promoção pressupõe a inclusão de consumidores regulares, pessoas físicas que adquirem os produtos aptos a participar para seu consumo próprio ou familiar, não estando previstas:</p>
+              <p>I.	Compras realizadas por pessoas físicas destinadas a revenda;</p>
+              <p>II.	Compras de grupos de pessoas, visando apenas concentrar participações, na expectativa de aumento de chances de premiação;</p>
+              <p>III.	Qualquer tipo de tentativa de burlar o objetivo da presente promoção, embora não citados aqui.</p>
+              <p>5.2.	Os participantes poderão ser excluídos automaticamente da promoção em caso de fraude comprovada, de não preenchimento dos requisitos previamente determinados e/ou em decorrência da prestação de informações incorretas ou equivocadas, de acordo com as regras do regulamento da promoção.</p>
+              <p>5.3.	A empresa promotora reserva o direito de desclassificar qualquer participante que julgue estar manipulando a operação desta Promoção ou violando os termos e condições dispostos neste Regulamento. Tais ocorrências, se identificadas, serão amparadas por meio de relatórios técnicos aptos a comprovarem os indícios e/ou fraudes identificadas, os quais somente serão submetidos às autoridades competentes, sendo mantidos sob sigilo pela empresa promotora.</p>
+              <p>5.4.	Ficará vedada a participação dos sócios, franqueados, funcionários das lojas Cacau Show, revendedores Cacau Show, e representantes das empresas Cacau Show, Franquia Show Assessoria em Negócios Ltda e IBAC Indústria Brasileira de Alimentos e Chocolates Ltda., bem como da agência e outras empresas diretamente envolvidos nos processos de planejamento, elaboração e promoção desta campanha. O cumprimento desta cláusula é de responsabilidade da empresa promotora, através de consulta ao banco de dados de funcionários no momento da verificação do contemplado.</p>
+              <p><strong>6.	ENTREGA DO PRÊMIO:</strong></p>
+              <p>6.1.	O prêmio é pessoal e intransferível e deverá ser retirado em qualquer uma das lojas Cacau Show, mediante a entrega do palito premiado. </p>
+              <p>6.1.1.	Diante disto, o contemplado deverá se dirigir a uma das lojas Cacau Show e apresentar o palito premiado, que será avaliado e validado pela loja.</p>
+              <p>6.1.2.	O contemplado poderá retirar seu prêmio dentro da categoria estabelecida, sendo que no caso de premiação que envolva os produtos Cacau Show, o cliente poderá escolher o sabor disponível, desde que esteja em estoque no endereço escolhido para retirada, no ato da troca. Não havendo o sabor escolhido, o cliente deverá escolher outro sabor em estoque, dentro da mesma classificação.</p>
+              <p>6.1.3.	Para ter acesso ao prêmio “pontos Cacaus” do programa de fidelidade Cacau Lovers, o cliente precisa se cadastrar ou fazer login no site do programa de fidelidade Lovers https://lovers.cacaushow.com.br/ e inserir código impresso no verso do Palito. Para mais informações sobre o resgate, validades e outras informações dos Cacaus consulte o site https://lovers.cacaushow.com.br/.</p>
+              <p>6.2.	O prêmio distribuído será entregue livre e desembaraçado de qualquer ônus para o contemplado.</p>
+              <p>6.3.	Nos termos da legislação em vigor, não será permitida a conversão do prêmio em dinheiro ou, ainda, a sua substituição por outro, bem como a transferência do prêmio à terceiro, que não o contemplado, em data anterior à sua efetiva entrega e integralização ao patrimônio deste.</p>
+              <p>6.4.	A responsabilidade da empresa promotora com os participantes ganhadores encerra-se no momento da entrega do prêmio, não cabendo ao contemplado discutir ou redefinir as condições e/ou premissas da promoção ou do prêmio.</p>
+              <p><strong>7.	DISPOSIÇÕES GERAIS: </strong></p>
+              <p>7.1.	O regulamento completo estará disponível para consulta no site:  https://www.cacaushow.com.br/regulamentos/Regulamentos.htm.</p>
+              <p>7.2.	Em caso de dúvidas, consulte o SAC Tel: 4004-2987 capital região metropolitana ou 0800119263 Demais regiões. Ou fale conosco: https://sac.cacaushow.com.br/. </p>
+              <p>7.3.	A participação na presente Promoção caracteriza, por si, a aceitação por parte dos consumidores participantes de todos os termos e condições estabelecidos neste regulamento.</p>
+              <p>7.4.	Todos os participantes declaram que somente fornecerão informações verdadeiras e corretas sobre si, passíveis de confirmação, e que não utilizarão qualquer artifício, tal como, mas não limitado, ao uso de informações de terceiros, informações incorretas, incompletas, que visem propositalmente burlar as regras de participação nesta promoção e  que possam configurar crime de falsidade ideológica ou documental, cientes de  que poderão responder administrativa, cível ou penalmente pelos atos praticados.</p>
+              <p>7.5.	Caso o prêmio ganho não seja reclamado no prazo de 180 (cento e oitenta) dias contados a partir da data de término da promoção, caducará o direito do respectivo titular e o valor correspondente será recolhido pela empresa promotora, ao Tesouro Nacional como Renda da União, no prazo subsequente de 45 (quarenta e cinco) dias.</p>
+              <p>7.6.	Os contemplados autorizam, desde já, como consequência da conquista de seu prêmio, a utilização de seus nomes, imagens e sons de voz, em qualquer um dos meios escolhidos pela Promotora para divulgação desta campanha, pelo período de 1 (um) ano contado da data de término da promoção, e, assim como os demais participantes, autorizam, também, a utilização de seus dados, como endereço físico, eletrônico, telefone e demais dados constantes do cupom/cadastro, desde que não fira o Código do Consumidor, com o propósito de formação e/ou atualização de cadastro da Promotora, reforço de mídia publicitária e divulgação do evento em referência, sem nenhum ônus para esta, comprometendo-se a não comercializá-los e nem a cedê-los, ainda que a título gratuito.</p>
+              <p>7.7.	A empresa promotora, neste momento, assume o compromisso de proteger os dados pessoais, mantendo absoluta confidencialidade sobre tais informações, garantindo que, excetuados os casos previstos em lei e ao fiel cumprimento da execução desta promoção, não serão compartilhados ou cedidos com terceiros a qualquer título. </p>
+              <p>7.8.	Assim, os dados serão compartilhados apenas com as empresas contratadas pela empresa promotora, tais como: empresas responsáveis contabilidade, pela auditoria, pela autorização e prestação de contas da promoção junto à SPA/MF, pela assessoria jurídica, pela entrega dos prêmios, todas com a finalidade exclusiva de executar e operacionalizar a presente promoção. Os dados também serão compartilhados com a SPA/MF, órgão público responsável pela autorização, regulação e fiscalização das promoções comerciais, em atenção à legislação que rege o tema. </p>
+              <p>7.9.	A empresa promotora exige que todas as empresas responsáveis pela execução e operacionalização desta promoção utilizem referidos dados pessoais em conformidade com este Regulamento e como a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+              <p>7.10.	Internamente, os dados dos contemplados serão acessados somente por colaboradores autorizados pela empresa promotora, respeitando os princípios inerentes ao tratamento de dados pessoais previstos na Lei Geral de Proteção de Dados, sempre com o objetivo de execução e operacionalização desta Promoção, além do compromisso de confidencialidade e preservação da privacidade, de acordo com este Regulamento.</p>
+              <p>7.11.	As dúvidas, omissões ou controvérsias oriundas da presente Promoção serão, preliminarmente, dirimidas por uma comissão composta por 3 (três) representantes da Empresa Promotora. Na eventualidade de não se atingir um consenso após a atuação da comissão, a questão deverá, então, ser submetida à apreciação da SPA/MF. No silêncio injustificado da empresa promotora, bem como em razão de decisão insatisfatória que está vier a adotar quanto a eventuais solicitações de esclarecimentos que lhe forem apresentadas, poderão os consumidores participantes da Promoção apresentar suas reclamações fundamentadas ao Procon local e/ou aos órgãos públicos integrantes do Sistema Nacional de Defesa do Consumidor.</p>
+              <p>7.12.	Fim do prazo da Promoção e/ou esgotado dos brindes da promoção, qualquer compra/pagamento efetuado pelo consumidor, mesmo que atenda aos demais requisitos deste Regulamento, não ensejará ao mesmo o recebimento de qualquer brinde, dinheiro, troca por outro produto ou devolução do dinheiro gasto com os Produtos Participantes ou reembolso de qualquer outra despesa aqui não prevista.</p>
+              <p>7.13.	O número do Certificado de Autorização constará de forma clara e precisa no regulamento da promoção. Para os demais materiais de divulgação, as empresas promotoras solicitaram ao Ministério da Fazenda dispensa da aposição, fazendo constar, apenas, a indicação de consulta do número de autorização SPA/MF no referido regulamento.</p>
+              <p>7.14.	Fica, desde já, eleito o foro central da Comarca do participante para solução de quaisquer questões referentes ao Regulamento da presente promoção.</p>
+              <p>7.15.	Esta promoção está de acordo com a legislação vigente (Lei n.º 5.768/71, regulamentada pelo Decreto n.º 70.951/72 e Portaria MF 7.638/22) e obteve o Certificado de Autorização SPA/MF nº. 05.037598/2024 expedido pelo Ministério da Fazenda.</p>
+            </div>
+          </details>
+        </section>
+    
+        <section>
+          <details>
+            <summary>Regulamento Retire em Loja <img src="https://img.icons8.com/ios-filled/32/000000/online-store.png"/></summary>
+            <div class="interno">
+              <P class="enfase"> CACAU SHOW – RETIRE EM LOJA</P>
+              <P>Nós da Cacau Show disponibilizamos uma nova modalidade de compra de produtos em nosso site, com ainda mais praticidade!</P>
+              <P class="enfase">Veja abaixo o passo a passo para identificar a opção e realizar sua compra:</P>
+              <P>1. Selecione os produtos que deseja:</P>
+              <P>2. Ao finalizar a compra e ser direcionado para o carrinho, terá a opção “Retirada em Loja” com o endereço da loja mais próxima;</P>
+              <P>3. Logo que a compra for concluída, você receberá um e-mail com as informações detalhadas do seu pedido;</P>
+              <P>4. Iremos comunicar via <strong>SMS</strong> o momento em que seu pedido estiver pronto para ser retirado.</P>
+              <P> 1. <strong>OBSERVAÇÃO IMPORTANTE:</strong> O pedido só pode ser retirado, após o envio do <strong>SMS</strong> para o número de cadastro no site cacau show.</P>
+              <P>Pronto!! agora é só passar na loja e retirar os produtos escolhidos.</P>
+              <P class="enfase">Informações importantes</P>
+              <P>O produto será entregue somente durante o horário de funcionamento da loja;</P>
+              <P>Horário de funcionamento de nossas lojas.</P>
+              <P class="enfase">Para retirada em DIAS ÚTEIS</P>
+              <P>Loja de rua: Das 09:30 às 17:30</P>
+              <P>Loja de Shopping e supermercados: Das 10:30 às 21:30</P>
+              <P class="enfase">Para retirada em FINAIS DE SEMANA E FERIADO</P>
+              <P>Loja de rua: Das 09:30 às 16:30</P>
+              <P>Loja de Shopping e supermercados: Das 14:30 às 19:30 (Importante verificar a disponibilidade de abertura da loja em sua cidade aos finais de semana).</P>
+              <P>Após a confirmação do pedido via SMS, você terá <strong>2 dias</strong> (dois dias) para retirada o pedido. Caso o pedido não seja retirado durante esse prazo, o cancelamento será realizado automaticamente.</P>
+              <P>Ao retirar o pedido, é obrigatório informar o código do pedido iniciado em “CS”, o número do CPF e nome do responsável pela compra em nosso site;</P>
+              <P>É necessário checar no momento da retirada se o pedido está correto e sem avaria;</P>
+              <P>Caso não seja possível a visualização da opção “Retire em Loja”, significa que essa modalidade ainda não está disponível para região do CEP mencionado.</P>
+              <P class="enfase">Troca e cancelamento</P>
+              <P>Para realizar a solicitação do cancelamento do pedido, entre em contato com o time de SAC da Cacau Show dentro de 1 dia, após a finalização da compra. Se o pagamento for realizado em voucher, iremos te encaminhar um novo através do e-mail para utilização em 1 dia útil, caso a compra tenha sido realizada em cartão de crédito o valor será estornado automaticamente no cartão, e se for em Pix o prazo é de 1 útil para o estorno.</P>
+              <P>Não é possível realizar a troca de item no momento da retirada, sendo necessário o cancelamento caso opte por não querer um dos itens;</P>
+              <P>Em caso de arrependimento da compra você possui 7 dias corridos a contar do ato da retirada do pedido para se arrepender. O pedido a ser devolvido deve estar intacto e os produtos em bom estado de conservação.</P>
+              <P>Se você atende ao requisito e quer devolver, entre em contato com o nosso SAC:</P>
+              <P class="enfase">IMPORTANTE</P>
+              <P>O sistema irá direcionar seu pedido para loja mais próxima de acordo com o CEP inserido e a disponibilidade de estoque das lojas nessa região. Vale lembrar que, seu pedido <strong>só pode ser retirado nessa loja.</strong></P>
+              <P>Qualquer dúvida entre em contato com nosso SAC Capitais e região metropolitana, ligar para 4003 5770, demais localidades 0800 11 9263 – de segunda a sexta-feira, das 9h às 17h.</P>
+              <p>Ou entre em contato com um de nossos agentes em nosso chat de atendimento.</P>
+            </div>
+          </details>
+        </section>
+
+
+        <section>
+          <details>
+            <summary>Regulamento Promoção Miau</summary>
+            <div class="interno">
+              <p class="enfase">Nas compras acima 3 itens do mesmo produto, ganhe até 7% de desconto.</p>
+              <p>Promoção válida pelo período de 18/02/2025 a 19/02/2025 ou enquanto durarem os estoques.</p>
+              <p><strong>Promoção válida para os itens:</strong></p>
+              <p>CX MIAU AO LEITE 70G (SAP: 1002797) – (6% de desconto)</p>
+              <p>MIAU ZERO LACTOSE 70GX24UN (SAP: 1002822) - (8% de desconto)</p>
+              <p>CX MIAU RECHEADO AO LEITE 70GX24UN (SAP: 1003369) – (6% de desconto)</p>
+              <p>Imagens ilustrativas. Promoção exclusiva para clientes cadastrados no programa de fidelidade “Cacau Lovers”, sendo necessária a comprovação de participação. Benefícios e descontos estarão disponíveis 24 horas após a efetivação do cadastro. Promoção não acumulativa. Consulte no site www.cacaushow.com.br os itens participantes. PROMOÇÕES E PRODUTOS PODEM SOFRER ALTERAÇÕES.</p>
+              <P>Qualquer dúvida entre em contato com nosso SAC Capitais e região metropolitana, ligar para 4003 5770, demais localidades 0800 11 9263 – de segunda a sexta-feira, das 9h às 17h.</P>
+            </div>
+          </details>
+        </section>
+
+        <section>
+          <details>
+            <summary>Promoção Biscoiteria</summary>
+            <div class="interno">
+              <p class="enfase">Compre e ganhe 50% OFF na segunda unidade.</p>
+              <p>Compre 1 produto da linha Biscoiteria participante da promoção e ganhe 50% de desconto na segunda unidade para qualquer produto da lista, seguindo as regras para cada canal de venda conforme detalhamento a seguir.</p>
+              <p>Promoção válida pelo período de 22/02/2025 a 30/03/2025 ou enquanto durarem os estoques.</p>
+              <p><strong>Promoção válida para os itens:</strong></p>
+              <p>•  Biscoito Tradicional ao Leite 100g</p>
+              <p>•	Biscoito Coberto Caramelizado ao leite 100g</p>
+              <p>•	Cookies com gotas ao leite 120g</p>
+              <p>•	Cookies duo chocolate 120g</p>
+              <p>•	Cookies 3 Chocolates Sortidos 140g</p>
+              <p>•	Cookies de Limão 140g</p>
+              <p>•  Wafer Biscoiteria Mil-Folhas 80g</p>
+              <p>•  Wafer LaNut Recheio Avelã 80g</p>
+              <p>•  Wafer Biscoiteria Pistache 80g</p>
+              <p>•  Wafer Biscoiteria Cappuccino 80g</p>
+              <p>•  Wafer Biscoiteria Limão 80g</p>
+              <p>•  Cookies Duo Chocolate 120g</p>
+              <p>Imagens ilustrativas. Promoção exclusiva para clientes cadastrados no programa de fidelidade “Cacau Lovers”, sendo necessária a comprovação de participação. Benefícios e descontos estarão disponíveis 24 horas após a efetivação do cadastro. Promoção não acumulativa. Consulte no site www.cacaushow.com.br os itens participantes. PROMOÇÕES E PRODUTOS PODEM SOFRER ALTERAÇÕES.</p>
+              <p class="enfase">Regras Canal Loja Física</p>
+              <p>Na compra de uma unidade do Biscoito Coberto Tradicional ao leite 100g ou Biscoito Coberto Caramelizado ao leite 100g a segunda unidade de qualquer produto da linha Biscoiteria de menor valor de 100g, 120g e 140g sai por 50% de desconto.</p>
+              <p>O valor unitário é de R$17,99. Na compra de uma unidade do Cookies com gotas ao leite 120g ou Cookies duo chocolate 120g a segunda unidade de qualquer produto da linha Biscoiteria de menor valor de 100g, 120g e 140g sai por 50% de desconto.</p>
+              <p>O valor unitário é de R$17,99. Na compra de uma unidade do Cookies 3 chocolates 140g ou Cookies limão com chocolate branco 140g a segunda unidade de qualquer produto da linha Biscoiteria de menor valor de 100g, 120g e 140g sai por 50% de desconto. O valor unitário é de R$20,99.</p>
+              <p><strong>Regras válidas exclusivamente para compras nas lojas físicas.</strong></p>
+              <p class="enfase">REGRAS CANAL VENDA DIRETA</p>
+              <p><strong>BISCOITO 100G:</strong> Imagens ilustrativas dos produtos. Na promoção, compre 10 (dez) unidades do <strong>biscoito coberto tradicional ao leite 100g</strong> ou do <strong>biscoito coberto caramelizado ao leite 100g</strong> por R$99,00. Promoção válida de 22/02/2025 a 30/03/2025 ou enquanto durarem os estoques. Promoção não cumulativa com outras ofertas. Consulte no site os itens participantes no site: www.cacaushow.com.br</p>
+              <p><strong>PROMO COOKIE 120G:</strong> Imagens ilustrativas dos produtos. Na promoção, compre 10 (dez) unidades de cookies com gotas de chocolate ao leite 120g ou de cookies duo chocolate 120g por R$104,99. Promoção válida de 22/02/2025 a 30/03/2025 ou enquanto durarem os estoques. Promoção não cumulativa com outras ofertas. Consulte os itens participantes no site: www.cacaushow.com.br.</p>
+              <p><strong>PROMO COOKIE 140G:</strong> Imagens ilustrativas dos produtos. Na promoção, compre 10 (dez) unidades de Cookies 3 Chocolates 140g ou Cookies Limão com Chocolate Branco 140g por R$109,99. Promoção válida de 22/02/2025 a 30/03/2025 ou enquanto durarem os estoques. Promoção não cumulativa com outras ofertas. Consulte os itens participantes no site: www.cacaushow.com.br. </p>
+              <p class="enfase">Regras válidas exclusivamente para revendedores que efetuem a compra nas lojas físicas.</p>
+              <p><strong>O revendedor não terá 15% de desconto adicional sobre o valor da promoção. A ação será considerada para geração de Margem Extra.</strong></p>
+              <p><strong>Itens Participantes</strong></p>
+              <p>•	Combo Biscoitos Cobertos 100g: 10 unidades por R$99,99</p>
+              <p>•	Combo Cookies 120g: 10 unidades por R$ R$104,99</p>
+              <p>•	Combo Cookies com Chocolate e Cookie Limão 140g: 10 unidades por R$109,99</p>
+              <p class="enfase">REGRAS CANAIS DIGITAIS (SITE E APP)</p>
+              <p>Na compra de uma unidade de qualquer biscoito participante da promoção ganhe 50% de desconto na segunda unidade do mesmo produto.</p>
+              <p><strong>Regras válidas exclusivamente no site a aplicativo.</strong></p>
+            </div>
+          </details>
+        </section>
+
+        <br>
+        <br>
+      </body>
+  </doctype>
+    <!-- END_dwmarker -->
+
+</div>
+
+
+    <div class="row d-sm-none footer__lessInfo">
+        Menos Informa&ccedil;&otilde;es
+    </div>
+
+    <div class="row d-sm-none footer__moreInfo">
+        Mais Informa&ccedil;&otilde;es
+    </div>
+
+
+
+    <footer class="footer" id="footercontent">
+        <div class="footer__container">
+
+            <div class="footer__header">
+                <div class="footer__logo">
+                    <span class="icon-big_logo"></span>
+                </div>
+
+            </div>
+
+            <div class="row footer__main">
+                <div class="footer__internalLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="6667ebfe3df8866accdf9df876" -->
+        <ul>
+	<li><a href="../para-sua-empresa/institucional.html"><span class="icon icon-mini_logo"></span> <span class="footer__text"> Sobre a <b>Cacau Show</b> </span> </a></li>
+	<li><a href="../fazenda/fazenda.html"><span class="icon"> <img alt="" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw6c690283/footer_tree.svg" title="" /> </span> <span class="footer__text"> Nossa <b>Fazenda</b> </span> </a></li>
+	<li><a href="https://www.institutocacaushow.org.br/" target="_blank"><span class="icon"> <img alt="Grupo Cacau Show" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dwf8f8c24c/icon-cacau-group.svg" title="" /> </span> <span class="footer__text"> <b>Instituto</b> Cacau Show </span> </a></li>
+	<li><a href="https://www.eureciclo.com.br/" target="_blank"><span class="icon"> <img alt="eu reciclo" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dwa345ee6d/icon-eureciclo.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.worldcocoafoundation.org/" target="_blank"><span class="icon"> <img alt="WCF" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw9565d57e/icon-wcf.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.pactoglobal.org.br/" target="_blank"><span class="icon"> <img alt="Logo Global" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw0a962484/Logo-Global.png" style="width: 100px" title="" /> </span></a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__privacyTerms">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="0efc7e4bc1fdf95585a0a440cf" -->
+        <p>A Cacau Show se compromete em utilizar ovos de galinhas livres de gaiolas em todas as suas opera&ccedil;&otilde;es. Estamos trabalhando para garantir essa transi&ccedil;&atilde;o at&eacute; 2025. As imagens expostas neste site s&atilde;o meramente ilustrativas.</p>
+
+<p>Pre&ccedil;os apresentados na loja virtual podem variar de acordo com a regi&atilde;o. Informa&ccedil;&otilde;es sobre pre&ccedil;os, prazos de validade, estoque e origem podem ser obtidas diretamente nas lojas. &nbsp;Consulte a loja para verificar disponibilidade.</p>
+
+<p>&nbsp;</p>
+
+<p>Pre&ccedil;os, estoques, informa&ccedil;&otilde;es e condi&ccedil;&otilde;es dispon&iacute;veis no site est&atilde;o sujeitos a altera&ccedil;&otilde;es sem aviso pr&eacute;vio. *Pre&ccedil;os e produtos do Choco-Outlet s&atilde;o v&aacute;lidos somente para compras realizadas na loja virtual sujeito a disponibilidade de estoque.</p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="5f99c9d5e9032dfc2cf7d515de" -->
+        <h3>Institucional</h3>
+
+<p><a href="https://revendedor.cacaushow.com.br/revendedor/" target="_blank">Seja um Revendedor</a></p>
+
+<p><a href="../franquia.html">Seja um Franqueado</a></p>
+
+<p><a href="../para-sua-empresa/para-sua-empresa.html">&Aacute;rea para Empresas</a></p>
+
+<p><a href="https://cacaushow.gupy.io/" target="_blank">Trabalhe Conosco</a></p>
+
+<p><a href="../lingua-de-gato.html">Língua de Gato</a></p>
+
+<p><a href="../categoria/nossas-marcas.1.html">Nossas Marcas</a></p>
+
+<p><a href="../Palito_Premiado.html">Palito Premiado</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="58285c918422623e4467907384" -->
+        <h3>Pol&iacute;ticas</h3>
+
+<p><a href="../terms.html">Termos de Uso</a></p>
+
+<p><a href="../politica-privacidade/privacy-policy.html">Pol&iacute;tica de Privacidade</a></p>
+
+<p><a href="../returns.html">Pol&iacute;tica de Trocas</a></p>
+
+<p><a href="../faqs.html">FAQ</a>&nbsp;</p>
+
+<p><a href="Regulamentos.html">Regulamentos</a></p>
+
+<p><a href="https://sac.cacaushow.com.br/" target="_blank">SAC</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="col footer__wrapper">
+                    <div class="footer__socialLinks">
+                        
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="9aa03c4dd60ce992affce3c93c" -->
+        <ul>
+        <li><span class="social-text">Siga-nos</span></li>
+	<li><a href="https://www.facebook.com/CacauShow" target="_blank" title="Facebook"><span class="icon-social_fb"></span> </a></li>
+	<li><a href="https://www.instagram.com/cacaushow/" target="_blank" title="Instagram"><span class="icon-social_insta"></span> </a></li>
+	<li><a href="https://www.youtube.com/user/CacauShowBR" target="_blank" title="Youtube"><span class="icon-social_yb"></span> </a></li>
+	<li><a href="https://www.tiktok.com/@cacaushow" target="_blank" title="TikTok"><span class="icon-tiktok"></span> </a></li>
+	<li><a href="https://www.linkedin.com/company/cacau-show/" target="_blank" title="Linkedin"><span class="icon-social_linked"></span> </a></li>
+	<li><a href="https://twitter.com/cacaushow" target="_blank" title="Twitter"><span class="icon-social_tw"></span> </a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                    </div>
+
+                    <div class="d-none d-sm-block footer__image">
+                        <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                            alt="Cacau Show" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-sm-none footer__image">
+            <div class="row">
+                <div class="col-12">
+                    <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                        alt="Cacau Show" />
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyrightText">
+            
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="37b2ed0fd3a64c66094b85076e" -->
+        © Copyright 2023. Todos os direitos reservados.  |  Cacau Comércio Eletrônico LTDA 32.143.933/0003-96 | Endereço: Rodovia Anhanguera KM 31,7, 800, Bloco 300 Galpão 20, 21 e 22 - Area Selia, Bairro Empresarial Anhanguera, Cajamar – SP, CEP 07.753-580
+    </div> <!-- End content-asset -->
+
+
+
+
+        </div>
+    </footer>
+
+
+<div class="modal-background-changeAddress"></div>
+<div class="loading__component"></div>
+
+
+
+    
+<script defer type="text/javascript">
+  window.SmartOrderRefillSettings = {};
+  SmartOrderRefillSettings.Resources = {"SOR_CANCEL_SUBSCRIPTION_TITLE":"Assinatura cancelada!","SOR_PAUSE_SUBSCRIPTION_TITLE":"Assinatura pausada!","SOR_REACTIVE_SUBSCRIPTION_TITLE":"Reativar assinatura?","SOR_REACTIVATE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode reativar esta assinatura.","SOR_RESUBSCRIBE_TITLE":"Resubscribe","SOR_RESUBSCRIBE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode assinar novamente esta assinatura.","SOR_UPDATE_CREDIT_CARD_TITLE":"Atualizar Cartão de Crédito","SOR_GLOBAL_UPDATE_CREDIT_CARD_SAVE":"Confirmar/Atualizar Cartão de Crédito","SOR_ADD_PRODUCT_TITLE_PDP":"Select the subscription to which you would like to add this product:","SOR_ADD_PRODUCT_TITLE":"ADD PRODUCT TO THE SUBSCRIPTION","SOR_ADD_PRODUCT_WARNING":"We could not find an available product to add to this subscription. Please try again later.","SOR_UNEXPECTED_ERROR":"Erro inesperado.","SOR_ERROR_TITLE":"Error","SOR_WARNING_TITLE":"Aviso","SOR_ADDRESS_ERROR":"Unable to change the address.","SOR_PRODUCT_ERROR":"Unable to change the product.","SOR_QUANTITY_ERROR":"Unable to update product quantity.","SOR_CREDITCARD_ERROR":"Unable to update the credit card.","SOR_LOGINFROMCART_ERROR":"Sorry, this does not match our records. Check your spelling and try again.","SOR_GLOBAL_CLOSE":"Fechar","SOR_GLOBAL_CANCEL":"Cancelar","SOR_GLOBAL_SAVE":"Salvar","SOR_GLOBAL_OK":"OK","SOR_GLOBAL_OK_CANCEL":"Ok, estou ciente","SOR_GLOBAL_BACK":"Voltar","SOR_GLOBAL_UPDATE":"Update","SOR_GLOBAL_SUBMIT":"Submit","SOR_CHANGE_ADDRESS_TITLE":"Change Address","SOR_QUANTITY_RESTRAIN_ERROR":"Quantity must be greater than 0","SOR_CHANGEADDRESS_ERROR_NOSHIPPING":"There are no shipping methods available for this address. Please select a valid address.","SOR_CHANGEADDRESS_ERROR_SHIPPING":"An error occured while retrieving available shipping methods. Please try again later.","SOR_ADDFROMPDP_WARNING_SAVE":"Please select a subscription.","SOR_DIALOG_SUBSCRIPTION":"Detalhes / Editar Assinatura","SOR_CONFIRM_REACTIVE_SUBSCRIPTION_TITLE":"Assinatura reativada!","SOR_DIALOG_ORDER":"Remessa do pedido do dia"};
+  SmartOrderRefillSettings.Urls = {"loginFromCartPage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-RequireLogin","manageOrders":"/gerenciar-recompra","updateRefillData":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-UpdateCartProductRefillInformation","getSubscriptionsToAddProductFromPDP":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetSubscriptionsToAddProductFromPDP","updatePDPOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-PDPRefillOptions","cancelOneOrder":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-SkipOrder","cartShow":"/carrinho","getVariantOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetVariantOptions","getIntervalOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetIntervalOptions","getMasterProductID":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetMasterProductID","getLimitedSubscriptionPDPMessage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetLimitedSubscriptionPDPMessage"};
+  SmartOrderRefillSettings.SitePreferences = {"SOR_ENABLED":true};
+  SmartOrderRefillSettings.hasSORProducts = false;
+</script>
+
+<script defer type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/smartOrderRefill.js"></script>
+
+
+
+
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal-btn" data-dismiss="modal" aria-label="Fechar">
+                    <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwe7bf1da3/svg/close-modal-icon.svg" alt="" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="content-wrapper">
+                    <img class="icon product-added-success" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw033be606/svg/icon-cart-add.svg" alt="" />
+                    <img class="icon product-added-fail" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwbbb1257d/svg/product-added-fail.svg" alt="" />
+                    <img class="icon product-wishlist-add" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw88cab205/svg/icon-wishlist-added.svg" alt="" />
+                    <img class="icon product-wishlist-remove" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwa21fe753/svg/icon-wishlist-removed.svg" alt="" />
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="4bca5d0fb5512994476a3b2659" -->
+        <div id="consent-tracking" class="alert mb-0 fixed-bottom text-center d-none" role="alert">
+     <div class="alert-content d-inline-block pt-1 pb-1"></div>
+     <button type="button" class="affirm btn text-white pr-2 pl-2 mr-1 pb-1 pt-1 float-sm-right float-xs-center" data-dismiss="alert">Aceitar todos os cookies</button>
+</div>
+    </div> <!-- End content-asset -->
+
+
+
+
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+
+<![endif]-->
+
+
+<span class="api-true  tracking-consent"
+    data-caOnline="true"
+    data-url="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-GetContent?cid=tracking_hint"
+    data-reject="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=false"
+    data-accept="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=true"
+    data-acceptText="Sim"
+    data-rejectText="N&atilde;o"
+    data-heading="Cookies"
+    data-tokenName="csrf_token"
+    data-token="MsUjzrV6l0WFRnnCEurlAR5F7cQ0qDlNwTM7sBnbEP_UpABsuwCaBO8ORnF2u5FP_Cb5TrNO4_sAbP-5DT55hbvi4U50QqvpXTFHuoqDO11n_Ru-EDnlLhEKpSuQVanmgSO660Y8U9-I76O2qNZoXA4dO8xu_tkHXqbGXeF-0KFLFIny0o4="
+    ></span>
+
+
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-cep">
+    <div class="modal-dialog modal-dialog-scrollable step-01" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-CheckStoreAvailabilityByPostalCode" data-action-select-store="/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" method="post" class="modal-cep" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Bem-vindo à Cacau Show
+                    </h5>
+                    <p class="modal-subTitle">
+                        Para encontrarmos os <strong>melhores preços e o estoque</strong> mais perto de você, por gentileza <strong>informe seu CEP:</strong>
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex form-row flex-row justify-content-between mb-1">
+                        
+                        <div class="form-group required">
+                            <label class="form-control-label" for="customer-postal-code">
+                                CEP
+                            </label>
+                            <input type="text"
+                                class="form-control js-postal-code-format postal-code-input"
+                                id="customer-postal-code"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                                required
+                                autocomplete="postal-code"
+                                autofocus
+                                name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8" />
+                            <div class="invalid-feedback" id="zipCode-error"></div>
+                        </div>
+
+                        
+                        <div class="form-group required" >
+                            <label class="form-control-label" for="customer-street-number">
+                                Número
+                            </label>
+                            <input type="text"
+                                class="form-control postal-code-input"
+                                id="customer-street-number"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                                required
+                                name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                                autocomplete="shipping address-number" />
+                            <div class="invalid-feedback" id="userNum-error"></div>
+                        </div>
+                    </div>
+
+                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="btn-postal-code" rel="noopener" role="button" target="_blank" title="N&atilde;o sei meu CEP">
+                        N&atilde;o sei meu CEP
+                    </a>
+
+                    <div class="modal-address">
+                        <p class="zip-code-not-found"></p>
+                    </div>
+
+                    
+                    
+
+
+                    <div class="col-12 js-modal-stores pickupStores border-0 p-0 mb-0 d-none"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="hidden" name="csrf_token" value="JEcubiOyJSaGH0lW5IEArV-Buxx6TQDMHjVAIPli3byu_TW_cvBq6jBVVOf5lAj7sbVORVHOPj0CLrDUrhNXgDHz2y_WNgb-oT57JYFMFZBlVkCGKbWq6kqefs8SZcUrhzi90DcMcVkiFik5NCMPt85gjPOc8wsaH8NZTBMm6UF4fnktDzU="/>
+                    <button type="submit" class="btn btn-primary">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-address">
+    <div class="modal-dialog" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" id="address-form" method="post" class="modal-address" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Informe seu endere&ccedil;o
+                    </h5>
+                    <a href="javascript:void(0);" class="modal-close" data-dismiss="modal" aria-label="Fechar">
+                        <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw6ddd3d57/images/icon_modal_close.png" alt="Cacau Show" />
+                    </a>
+                </div>
+                <div class="modal-adress-body">
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street">
+                            Endereço
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_street" required aria-required="true" value="" maxLength="2147483647"
+                            autofocus
+                            autocomplete="shipping address1" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street-number">
+                            Número
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street-number"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                            autocomplete="shipping address-number" />
+                        <div class="invalid-feedback" id="userNum-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group " >
+                        <label class="form-control-label" for="customer-neighborhood">
+                            Bairro
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-neighborhood"
+                            data-missing-error="Por favor preencher o campo"
+                            
+                            name="dwfrm_storeUpdate_customerAddress_neighborhood" value="" maxLength="2147483647"
+                            autocomplete="shipping address2" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-city">
+                            Cidade
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-city"
+                            data-missing-error="Por favor preencher o campo"
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_city" required aria-required="true" value="" maxLength="2147483647"
+                            autocomplete="shipping city" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-postal-code">
+                            CEP
+                        </label>
+                        <input type="text"
+                            class="form-control js-postal-code-format"
+                            id="customer-postal-code"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                            required
+                            autocomplete="postal-code"
+                            name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8"
+                            readonly/>
+                        <div class="invalid-feedback" id="zipCode-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-state">
+                            Estado
+                        </label>
+                        <select
+                            class="form-control shippingState custom-select" id="customer-state"
+                            autocomplete="shipping address-level1"
+                            aria-describedby="customer-state"
+                            name="dwfrm_storeUpdate_customerAddress_state" required aria-required="true"
+                            readonly
+                            >
+                            
+                                <option id="AC" value="AC" >Acre</option>
+                            
+                                <option id="AL" value="AL" >Alagoas</option>
+                            
+                                <option id="AP" value="AP" >Amap&aacute;</option>
+                            
+                                <option id="AM" value="AM" >Amazonas</option>
+                            
+                                <option id="BA" value="BA" >Bahia</option>
+                            
+                                <option id="CE" value="CE" >Cear&aacute;</option>
+                            
+                                <option id="DF" value="DF" >Distrito Federal</option>
+                            
+                                <option id="ES" value="ES" >Esp&iacute;rito Santo</option>
+                            
+                                <option id="GO" value="GO" >Goi&aacute;s</option>
+                            
+                                <option id="MA" value="MA" >Maranh&atilde;o</option>
+                            
+                                <option id="MT" value="MT" >Mato Grosso</option>
+                            
+                                <option id="MS" value="MS" >Mato Grosso do Sul</option>
+                            
+                                <option id="MG" value="MG" >Minas Gerais</option>
+                            
+                                <option id="PA" value="PA" >Par&aacute;</option>
+                            
+                                <option id="PB" value="PB" >Para&iacute;ba</option>
+                            
+                                <option id="PR" value="PR" >Paran&aacute;</option>
+                            
+                                <option id="PE" value="PE" >Pernambuco</option>
+                            
+                                <option id="PI" value="PI" >Piau&iacute;</option>
+                            
+                                <option id="RJ" value="RJ" >Rio de Janeiro</option>
+                            
+                                <option id="RN" value="RN" >Rio Grande do Norte</option>
+                            
+                                <option id="RS" value="RS" >Rio Grande do Sul</option>
+                            
+                                <option id="RO" value="RO" >Rond&ocirc;nia</option>
+                            
+                                <option id="RR" value="RR" >Roraima</option>
+                            
+                                <option id="SC" value="SC" >Santa Catarina</option>
+                            
+                                <option id="SP" value="SP" >S&atilde;o Paulo</option>
+                            
+                                <option id="SE" value="SE" >Sergipe</option>
+                            
+                                <option id="TO" value="TO" >Tocantins</option>
+                            
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modal__error">Nenhuma loja encontrada para esse endere&ccedil;o.</p>
+                    <input type="hidden" name="csrf_token" value="JEcubiOyJSaGH0lW5IEArV-Buxx6TQDMHjVAIPli3byu_TW_cvBq6jBVVOf5lAj7sbVORVHOPj0CLrDUrhNXgDHz2y_WNgb-oT57JYFMFZBlVkCGKbWq6kqefs8SZcUrhzi90DcMcVkiFik5NCMPt85gjPOc8wsaH8NZTBMm6UF4fnktDzU="/>
+                    <button type="submit" class="btn btn-primary">
+                        Confirmar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="removeProductModal" tabindex="-1" role="dialog" aria-labelledby="removeProductLineItemModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header delete-confirmation-header">
+                <h2 class="modal-title" id="removeProductLineItemModal">Remover produto ?</h2>
+            </div>
+            <div class="modal-body delete-confirmation-body">
+                Deseja remover o produto do carrinho ?
+                <p class="product-to-remove"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary cart-delete-confirmation-btn"
+                    data-dismiss="modal"
+                >
+                    Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <input type="hidden" id="googleRecaptchaSiteKey" value="6LelHCgjAAAAAHSpCbAC4G4MzSgr-vyKDPL_x1bA"/>
+    <input type="hidden" id="googleRecaptchaAction"  value="submit"/>
+
+
+
+<input type="hidden" name="pendingTerms" value="null" />
+
+
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>

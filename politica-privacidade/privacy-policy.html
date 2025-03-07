@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-PQSFKTS" as="script"/>
+<link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-TTZNN90HGX&l=dataLayer&cx=c" as="script"/>
+<link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script"/>
+<link rel="preload" href="https://connect.facebook.net/en_US/fbevents.js" as="script"/>
+<!--[if gt IE 9]><!-->
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+
+<!--<![endif]-->
+<meta charset=UTF-8>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+    <title>
+        Politica de privacidade | Loja Cacau Show
+    </title>
+
+
+<meta name="description" content="Cacau Show"/>
+<meta name="keywords" content="Privacy Policy"/>
+
+
+
+
+<link rel="icon" type="image/png" href="../on/demandware.static/Sites-CacauShow-Site/-/default/dw0281253c/images/favicon.ico"/>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQSFKTS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Optimize -->
+<script async src="https://www.googleoptimize.com/optimize.js?id=OPT-5MPHKZF"></script>
+<!-- End Google Optimize -->
+
+<script>
+  var storedUserId = sessionStorage.getItem('userId') || undefined,
+      pathName = window.location.pathname,
+      pageTypeByPathname = pathName.split('/')[1],
+      pageTypeDictionary = {
+    'home':'home',
+    'categoria':'category',
+    'produto':'product',
+    'busca':'internalsitesearch',
+    'carrinho':'cart',
+    'checkout':'checkout'
+  };
+
+if(!storedUserId){
+  fetch('/on/demandware.store/Sites-CacauShow-Site/default/Account-PageView')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok fetching user id');
+    }
+    return response.json();
+  })
+  .then(data => {
+    sessionStorage.setItem('userId',data.userId)
+  })
+  .catch(error => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'Data Layer Error: ' + error.message
+            });
+  });
+  }
+
+  (function pushPageView(storedUserId) {
+    const currentPage = window.location.pathname
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+        'event': 'virtualPageView',
+        'currentPage': currentPage,
+        'pageType': pageTypeDictionary[pageTypeByPathname],
+        'pageTitle': document.title,
+        'previousPage': getPreviousPage(currentPage),
+        'userID': storedUserId,
+    });
+  })(storedUserId)
+
+
+
+  function getPreviousPage(currentPage) {
+    const previousPage = window.sessionStorage.getItem('dataLayer/previousPage');
+    window.sessionStorage.setItem('dataLayer/previousPage', currentPage);
+    return previousPage;
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<!-- VWO Tag Script -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code || (function() {
+var account_id=1004419,
+version=2.1,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+</script>
+
+
+<link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/global.css" />
+
+
+
+
+    <link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/smartOrderRefill.css" />
+
+
+
+
+    <meta name="google-site-verification" content="HV1li6dst_6LWYxjo7e_ada038iVt0t2L_nZE7TmS1Y" />
+
+
+<meta name="facebook-domain-verification" content="52tht2pe7s2lmpwrlrz87cj928yooi" />
+
+
+<script>
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE"};
+window.Resources = {"I_AGREE":"global.i_agree","CLOSE":"global.close","CEP":"07753580","BASIC_ADDRESS":"6045"};
+window.Urls = {"homeShow":"/","continueUrl":"https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Page-AppResources","staticPath":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/","giftRegAdd":"https://www.cacaushow.com.br/detalhes-endereco","getAvailability":"/on/demandware.store/Sites-CacauShow-Site/default/Product-GetAvailability","cartGet":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Get","cartItems":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Items","WishlistGet":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-GetListJson","removeImg":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/images/icon_remove.gif","storeDetails":"/on/demandware.store/Sites-CacauShow-Site/default/Stores-Details?page=storelocator","webProtocolHost":"https://www.cacaushow.com.br","addToCart":"/adicionar-produto","removeFromCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveProductLineItem","addToWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct","removeFromWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=","loginShow":"/login","changeAddress":"/on/demandware.store/Sites-CacauShow-Site/default/Address-Change","removeCoupom":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveCouponLineItem?uuid=","getPaymentMethods":"/pagamentos-adyen","addGiftCertificate":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-Add","checkBalance":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-GetBalance","addCashback":"/on/demandware.store/Sites-CacauShow-Site/default/CheckoutServices-SubmitPayment","updateQuantityCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"};
+window.SitePreferences = {"postalCodesBR":"{\"postalCodesBR\":[\n{\"state\":\"ac\", \"postalFrom\": 69900000, \"postalTo\" : 69999999},\n{\"state\":\"al\", \"postalFrom\": 57000000, \"postalTo\" : 57999999},\n{\"state\":\"am\", \"postalFrom\": 69000000, \"postalTo\" : 69299999},\n{\"state\":\"am\", \"postalFrom\": 69400000, \"postalTo\" : 69899999},\n{\"state\":\"ap\", \"postalFrom\": 68900000, \"postalTo\" : 68999999},\n{\"state\":\"ba\", \"postalFrom\": 40000000, \"postalTo\" : 48999999},\n{\"state\":\"ce\", \"postalFrom\": 60000000, \"postalTo\" : 63999999},\n{\"state\":\"df\", \"postalFrom\": 70000000, \"postalTo\" : 72799999},\n{\"state\":\"df\", \"postalFrom\": 73000000, \"postalTo\" : 73699999},\n{\"state\":\"es\", \"postalFrom\": 29000000, \"postalTo\" : 29999999},\n{\"state\":\"go\", \"postalFrom\": 72800000, \"postalTo\" : 72999999},\n{\"state\":\"go\", \"postalFrom\": 73700000, \"postalTo\" : 76799999},\n{\"state\":\"ma\", \"postalFrom\": 65000000, \"postalTo\" : 65999999},\n{\"state\":\"mg\", \"postalFrom\": 30000000, \"postalTo\" : 39999999},\n{\"state\":\"ms\", \"postalFrom\": 79000000, \"postalTo\" : 79999999},\n{\"state\":\"mt\", \"postalFrom\": 78000000, \"postalTo\" : 78899999},\n{\"state\":\"pa\", \"postalFrom\": 66000000, \"postalTo\" : 68899999},\n{\"state\":\"pb\", \"postalFrom\": 58000000, \"postalTo\" : 58999999},\n{\"state\":\"pe\", \"postalFrom\": 50000000, \"postalTo\" : 56999999},\n{\"state\":\"pi\", \"postalFrom\": 64000000, \"postalTo\" : 64999999},\n{\"state\":\"pr\", \"postalFrom\": 80000000, \"postalTo\" : 87999999},\n{\"state\":\"rs\", \"postalFrom\": 20000000, \"postalTo\" : 28999999},\n{\"state\":\"rn\", \"postalFrom\": 59000000, \"postalTo\" : 59999999},\n{\"state\":\"ro\", \"postalFrom\": 76800000, \"postalTo\" : 76999999},\n{\"state\":\"rr\", \"postalFrom\": 69300000, \"postalTo\" : 69399999},\n{\"state\":\"rs\", \"postalFrom\": 90000000, \"postalTo\" : 99999999},\n{\"state\":\"sc\", \"postalFrom\": 88000000, \"postalTo\" : 89999999},\n{\"state\":\"se\", \"postalFrom\": 49000000, \"postalTo\" : 49999999},\n{\"state\":\"sp\", \"postalFrom\": 1000000, \"postalTo\" : 19999999},\n{\"state\":\"to\", \"postalFrom\": 77000000, \"postalTo\" : 77999999}\n]}","priceTables":"{\"priceTables\":[\n{\"priceBookID\": \"df-sale-prices\", \"states\": [\"df\"]},\n{\"priceBookID\": \"go-sale-prices\", \"states\": [\"go\"]},\n{\"priceBookID\": \"mg-sale-prices\", \"states\": [\"mg\"]},\n{\"priceBookID\": \"pr-sale-prices\", \"states\": [\"pr\"]},\n{\"priceBookID\": \"z1-sale-prices\", \"states\": [\"sp\"]},\n{\"priceBookID\": \"z2-sale-prices\", \"states\": [\"es\",\"ms\",\"mt\",\"rs\",\"sc\"]},\n{\"priceBookID\": \"z3-sale-prices\", \"states\": [\"rj\"]},\n{\"priceBookID\": \"z4-sale-prices\", \"states\": [\"ac\",\"am\",\"ap\",\"rr\"]},\n{\"priceBookID\": \"z5-sale-prices\", \"states\": [\"al\",\"ba\",\"ce\",\"ma\",\"pa\",\"pb\",\"pe\",\"pi\",\"rn\",\"ro\",\"se\",\"to\"]}\n]}"};
+}());
+</script>
+
+
+
+
+
+
+
+
+    <style>
+/*
+.grecaptcha-badge {
+    bottom: 100px !important;
+}*/
+
+/* Move badge to the left side */
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+</style>
+
+<link rel="stylesheet" href="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/skin/skin.css" />
+
+<input
+    type="hidden"
+    class="js-cart-abandonment-settings"
+    data-is-enabled="true"
+    data-capture-cart-url="/on/demandware.store/Sites-CacauShow-Site/default/CartAbandonment-CaptureCart" />
+
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Etc/GMT+3",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bfjd-CacauShow';
+CQuotient.realm = 'BFJD';
+CQuotient.siteId = 'CacauShow';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'default';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+
+</head>
+<body class="" data-current-store="null">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQSFKTS"
+height="0" width="0" style="display:none;visibility:hidden"
+> </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page" data-action="Page-Show" data-querystring="cid=privacy-policy">
+<header class="it__header">
+    
+
+
+
+
+    
+    <div class="hidden-sm-down">
+        <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="../lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="../parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+    </div>
+    <a href="privacy-policy.html#maincontent" class="skip" aria-label="Ir para conte&uacute;do principal">Ir para conte&uacute;do principal</a>
+<a href="privacy-policy.html#footercontent" class="skip" aria-label="Ir para conte&uacute;do do rodap&eacute;">Ir para conte&uacute;do do rodap&eacute;</a>
+    <div class="header-banner slide-up d-none">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="content">
+                    
+	 
+
+	
+                </div>
+                <div class="close-button">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header container">
+        <div class="it__header--bgContainer">
+            <div class="it__header--bg container-wrapper">
+                <div class="col p-0">
+                    <div class="navbar-header brand">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <a class="logo-home" href="../index.html" title="Cacau Show Home">
+                                <img class="it_header--logo" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw2f40992f/svg/logo_cacau_show.svg" alt="Cacau Show" />
+                            </a>
+                            <div class="d-xl-none d-flex align-items-center">
+                                <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                                    <div class="minicart-total">
+    <a class="minicart-link" href="../carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                                </div>
+                                <button class="navbar-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-menu"></span>
+                                </button>
+                                <button class="close-button" type="button" role="button" aria-label="Fechar menu">
+                                    Fechar menu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="it__search">
+                        <div class="site-search">
+    <form role="search"
+        action="https://www.cacaushow.com.br/busca"
+        method="get"
+        name="simpleSearch"
+    >
+        <input class="form-control search-field"
+            type="text"
+            name="q"
+            value=""
+            placeholder="Buscar Produto"
+            role="combobox"
+            aria-describedby="search-assistive-text"
+            aria-haspopup="listbox"
+            aria-owns="search-results"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-activedescendant=""
+            aria-controls="search-results"
+            aria-label="Insira palavra chave ou n&deg; do item"
+            autocomplete="off" />
+        <button type="reset" name="reset-button" class="reset-button d-none" aria-label="">
+            <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw49c94b21/images/icon-x-lg.svg" alt="" />
+        </button>
+        <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-CacauShow-Site/default/SearchServices-GetSuggestions?q="></div>
+        <input type="hidden" value="default" name="lang">
+    </form>
+</div>
+
+                    </div>
+                </div>
+                <div class="col-xl-5 it__login">
+                    <div class="it__login--options">
+                        
+    <script>
+        sessionStorage.removeItem('userId')
+</script>
+
+    <div class="user">
+        <a class="btn btn-chamoisee" href="../minha-conta.html" role="button"
+            aria-label="Entrar na minha conta"
+        >
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="user-message">Entrar</span>
+        </a>
+    </div>
+
+
+
+<div class="it__changeCep">
+<button class="js-header-postal-code"  data-toggle="modal" data-target="#modal-cep">
+<span class="it__changeCep__address">
+Cacau Show - SP
+</span>
+
+<span class="it__changeCep__btnChange">
+Alterar
+</span>
+
+</button>
+</div>
+
+
+                    </div>
+                    <div class="it__minicart d-none d-xl-block">
+                        <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                            <div class="minicart-total">
+    <a class="minicart-link" href="../carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="it__subNav main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown" id="sg-navbar-collapse">
+            <nav class="navbar navbar-expand-xl cs__main--menu container-wrapper">
+    <div class="menu-group">
+        <ul class="nav navbar-nav">
+            
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/chocolate.html" id="cat_002" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Chocolate</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_002">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/trufas.html" id="cat_002_01" role="menuitem" class="dropdown-link" tabindex="0">Trufas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/tabletes-e-barras.html" id="cat_002_02" role="menuitem" class="dropdown-link" tabindex="0">Tabletes e Barras</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/bombons.html" id="cat_002_03" role="menuitem" class="dropdown-link" tabindex="0">Bombons</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/chocolate/bolinhas-de-chocolate.html" id="cat_002_04" role="menuitem" class="dropdown-link" tabindex="0">Bolinhas de Chocolate</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw409a49bb/header-Bytes.png" title="Bytes" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw5b864544/header-laCreme.png" title="laCreme" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/chocolate.html" id="cat_002" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Chocolate</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/biscoito.html" id="cat_001" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Biscoito</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_001">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/wafer-e-canudinhos.html" id="cat_001_01" role="menuitem" class="dropdown-link" tabindex="0">Wafer e Canudinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/cookies.html" id="cat_001_02" role="menuitem" class="dropdown-link" tabindex="0">Cookies</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/biscoito/biscoito-com-chocolate.html" id="cat_001_03" role="menuitem" class="dropdown-link" tabindex="0">Biscoito com Chocolate</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/biscoito/p%C3%83%C2%A3o-de-mel" id="cat_001_04" role="menuitem" class="dropdown-link" tabindex="0">P&atilde;o de Mel</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw227f3a27/header-Cookies.png" title="Cookies" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw06e81c7a/header-Wafer.png" title="Wafer" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/biscoito.html" id="cat_001" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Biscoito</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/cestas-e-presentes.html" id="cat_003" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Cestas e Presentes</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/presentes.html" id="cat_003_02" role="menuitem" class="dropdown-link" tabindex="0">Presentes</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/caixas,-cestas-e-sacolas.html" id="cat_003_03" role="menuitem" class="dropdown-link" tabindex="0">Caixas, Cestas e Sacolas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/cestas-e-presentes/pel%C3%83%C2%BAcias-e-ursinhos" id="cat_003_04" role="menuitem" class="dropdown-link" tabindex="0">Pel&uacute;cias e Ursinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/canecas.html" id="cat_003_06" role="menuitem" class="dropdown-link" tabindex="0">Canecas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/cestas-e-presentes/livros.html" id="cat_003_08" role="menuitem" class="dropdown-link" tabindex="0">Livros</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw2506cb45/header-Caneca.png" title="Caneca" /></li>
+</ul>
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/cestas-e-presentes.html" id="cat_003" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Cestas e Presentes</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="../categoria/moda.html" id="cat_005" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Moda</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_005">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/t%C3%83%C2%AAnis" id="cat_005_01" role="menuitem" class="dropdown-link" tabindex="0">T&ecirc;nis</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/sand%C3%83%C2%A1lias" id="cat_005_02" role="menuitem" class="dropdown-link" tabindex="0">Sand&aacute;lias</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="../categoria/moda/bolsas.html" id="cat_005_03" role="menuitem" class="dropdown-link" tabindex="0">Bolsas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw34b89fb9/header-Mochila.png" title="Mochila" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="../on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw4022ddf8/header-Tenis.png" title="Tenis" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="../categoria/moda.html" id="cat_005" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Moda</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>P&aacute;scoa</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_010">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa" id="cat_010_01" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa-infantil" id="cat_010_02" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa Infantil</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/bolo-de-p%C3%83%C2%A1scoa" id="cat_010_03" role="menuitem" class="dropdown-link" tabindex="0">Bolo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/chocolates-de-p%C3%83%C2%A1scoa" id="cat_010_04" role="menuitem" class="dropdown-link" tabindex="0">Chocolates de P&aacute;scoa</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">P&aacute;scoa</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+            
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+
+	<div class="html-slot-container">
+    
+        
+            <style type="text/css">
+.it_product-detail__rating{
+  display: none;
+}
+</style>
+<a class="btn-menu btn-sazonal" href="https://www.cacaushow.com.br/categoria/p%C3%A1scoa/ovo-de-p%C3%A1scoa-infantil" role="link" tabindex="0"><span class="btn-menu-text">Ovos Infantis</span> <img alt="" src="../on/demandware.static/-/Sites/default/dwb0ab1ce7/bookmark.svg" title="" /></a>
+        
+    
+</div>
+ 
+	
+            </li>
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+	
+            </li>
+            <li class="nav-item dropdown" role="presentation">
+                <a class="btn-menu btn-cacau-lovers" href="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/CacauLovers-Show" target="_blank"><img alt="" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw5821f791/images/svg/ico_lovers_branca.svg" title="" /><span class="btn-menu-text"> Cacau Lovers </span></a>
+            </li>
+            <div class="hidden-md-up">
+                
+                <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="../lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="../parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+        </div>
+    </div>
+</header>
+
+<div role="main" class="Page-Show" id="maincontent">
+
+    <!-- dwMarker="content" dwContentID="2e6774cc8a5bed33b890b30c12" -->
+    <head>
+  <style>
+      .tituloprincipal{
+        text-align: center;
+       font-weight: bolder;
+        font-size: 25px;
+        background: #352727;
+        color: #cecece;
+        margin: 1% 10%;
+      }
+
+      summary{
+        list-style-type:'';
+        margin: 1% 10% 0% 10%;
+        font-weight: bolder;
+        border-radius: 15px 15px;
+        border-style: outset double;
+        padding-left: 1%;
+      }
+
+      .enfase{
+        font-weight: bolder;
+      }
+
+      .interno{
+        border: solid 1px #000;
+        margin: 0 1% 0 1%;
+        text-align: center;
+        padding: 1%;
+
+      }
+  </style>
+</head>
+<body>
+
+  <h1 class="tituloprincipal">Politica de Privacidade</h1>
+    <div class="interno">
+        <!--<p class="enfase">1.OBJETIVO</p>
+            <p>O objetivo deste documento é estabelecer as diretrizes e regras de Proteção de Dados que permitam a CACAU SHOW realizar o tratamento de dados pessoais, em conformidade com a legislação brasileira.</p>
+            <p>São também objetivos deste documento:</p>
+            <p>I.Orientar quanto à adoção de controles técnicos e administrativos para atendimento dos requisitos para Proteção de Dados Pessoais, conforme a legislação vigente;</p>
+            <p>II.Resguardar os titulares dos dados pessoais que são tratados pela CACAU SHOW, garantindo direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural;</p>
+            <p>III.Prevenir possíveis causas de incidentes e responsabilidade legal da CACAU SHOW e seus colaboradores, clientes, parceiros e fornecedores;</p>
+            <p>IV.Minimizar os riscos de perdas financeiras, de perda de participação no mercado, de perda da confiança de clientes ou de qualquer outro impacto negativo ao negócio da CACAU SHOW como resultado de falhas de segurança da informação.</p>
+            <p>Esta política complementa a Política Geral de Segurança da Informação (PO-TI-SI-001).</p>
+
+        <p class="enfase">2.ABRANGÊNCIA</p>
+            <p>Esta política obedece ao escopo definido na Política Geral de Segurança da Informação (PO-TI-SI-001), aplicando-se a qualquer operação de coleta e tratamento de dados pessoais realizada pela CACAU SHOW, independentemente do meio ou do país onde estejam localizados os dados, desde que:</p>
+            <p>I.	A operação de tratamento seja realizada em território nacional brasileiro;</p>
+            <p>II.Tenha por objetivo a oferta ou o fornecimento de bens ou serviços ou o tratamento de dados de indivíduos localizados no território nacional brasileiro;</p>
+            <p>III.Os dados pessoais, objeto do tratamento, tenham sido coletados no território nacional brasileiro.</p>
+
+        <p class="enfase">3.DEFINIÇÕES</p>
+            <p>A CACAU SHOW entende que a privacidade é um direito fundamental da pessoa natural.</p>
+            <p>A CACAU SHOW compreende que, em seus processos de negócio onde existe tratamento de dados pessoais, essa informação passa por diferentes meios de suporte, armazenamento e comunicação, sendo necessário prevenir  vulnerabilidades a fatores externos e internos que possam comprometer a proteção de dados pessoais e afetar negativamente a privacidade dos seus titulares.</p>
+            <p>Dessa forma, a CACAU SHOW estabelece sua Política de Privacidade de Dados, como parte integrante do seu sistema de gestão corporativa, compatível com os requisitos da legislação brasileira, além de boas práticas e normas internacionalmente aceitas, com o objetivo de garantir níveis adequados de proteção para os dados pessoais tratados pela organização.</p>
+            <p>O objetivo da Proteção de Dados na CACAU SHOW é garantir a gestão sistemática e efetiva dos aspectos relacionados à proteção de dados pessoais e dos direitos dos seus titulares, provendo suporte às operações críticas do negócio e minimizando riscos identificados e seus eventuais impactos à organização.</p>
+            <p>COMITÊ DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS (CPPD): Grupo de trabalho multidisciplinar, contando com a participação de, pelo menos, um representante da diretoria da CACAU SHOW, e um membro de cada uma das seguintes áreas: Tecnologia da Informação, Segurança da Informação, Recursos Humanos, Jurídico e Auditoria. Tem por finalidade tratar questões ligadas à lei 13.709, Lei Geral de Proteção de Dados pessoais - LGPD. Os membros deliberarão sobre a área de Privacidade e Proteção de Dados pessoais. Mudanças estratégicas, sistêmicas e de tecnologias que tratam dados pessoais devem ser amplamente discutidas e aprovadas por este comitê antes de sua efetivação.</p>
+            <p>Para fins de entendimento e interpretação desta Política, os termos elencados abaixo possuem as seguintes definições:</p>
+            <p>AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS PESSOAIS (ANPD): órgão da administração pública responsável por zelar, implementar e fiscalizar o cumprimento da Lei Geral de Proteção de Dados Pessoais (LEI Nº 13.709, DE 14 DE AGOSTO DE 2018) em todo território nacional brasileiro.</p>
+            <p>LGPD: Lei Geral de Proteção de Dados Pessoais. Lei nº 13.709, de 14 de agosto de 2018.</p>
+            <p>TITULAR: pessoa natural a quem se referem os dados pessoais que são objeto de tratamento.</p>
+            <p>CONTROLADOR: pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais.</p>
+            <p>OPERADOR: pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador.</p>
+            <p>CONSENTIMENTO: manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada.</p>
+            <p>DADO PESSOAL: informação relacionada a pessoa natural identificada ou identificável.</p>
+            <p>DADO PESSOAL SENSÍVEL: dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.</p>
+            <p>DADO ANONIMIZADO: dado relativo ao titular que não possa ser identificado, considerando a utilização de meios técnicos razoáveis e disponíveis na ocasião de seu tratamento.</p>
+            <p>BLOQUEIO: suspensão temporária de qualquer operação de tratamento, mediante guarda do dado pessoal ou do banco de dados.</p>
+            <p>ELIMINAÇÃO: exclusão de dado ou de conjunto de dados armazenados em banco de dados, independentemente do procedimento empregado.</p>
+            <p>TRATAMENTO DE DADOS PESSOAIS: toda operação realizada com dados pessoais, como as que se referem a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração.</p>
+            <p>SEGURANÇA DA INFORMAÇÃO: a preservação das propriedades de confidencialidade, integridade e disponibilidade das informações da CACAU SHOW.</p>
+    
+        <p class="enfase">4.RESPONSABILIDADES</p>
+            <p>A Presidência, Diretoria Executiva e o Comitê de Privacidade e Proteção de Dados Pessoais estão comprometidos com uma gestão efetiva de Segurança da Informação na CACAU SHOW. Desta forma, prezam pela adoção das medidas cabíveis para garantir que esta política seja adequadamente comunicada, entendida e seguida em todos os níveis da organização. Revisões periódicas anuais serão realizadas e divulgadas para garantir sua contínua pertinência e adequação as necessidades da CACAU SHOW.</p>
+        
+        <p class="enfase">COMITÊ DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS (CPPD):</p>
+            <p>I.Analisar, revisar e aprovar políticas e normas relacionadas à proteção de dados pessoais na CACAU SHOW;</p>
+            <p>II.Zelar para que o tratamento de Dados Pessoais seja realizado em conformidade com esta política e a legislação vigente;</p>
+            <p>III.	Promover a divulgação desta política e tomar as ações internas de conscientização para disseminar uma cultura de proteção de Dados Pessoais no ambiente corporativo da CACAU SHOW.</p>
+        
+        <p class="enfase">ENCARREGADO PELO TRATAMENTO DE DADOS PESSOAIS (DPO):</p>
+            <p>I.Aceitar reclamações e comunicações dos titulares de dados pessoais, prestar esclarecimentos e adotar as providências necessárias;</p>
+            <p>II.Receber comunicações da autoridade nacional de proteção de dados e adotar as providências necessárias;</p>
+            <p>III.Orientar os colaboradores, terceiros contratados e demais partes da CACAU SHOW a respeito das práticas a serem tomadas em relação à proteção de dados pessoais;</p>
+            <p>IV.Atender as demais atribuições, conforme orientação da Autoridade Nacional de Proteção de Dados, definidas em normas complementares publicadas pelo referido órgão;</p>
+            <p>V.Apoiar o Comitê de Privacidade e Proteção de dados pessoais em suas deliberações;</p>
+            <p>VI.Atuar junto à área de Segurança da Informação no ajuste das políticas e dos procedimentos de Segurança da Informação, necessários para se fazer cumprir esta política;</p>
+            <p>VII.Identificar e avaliar as principais ameaças à proteção de dados pessoais, bem como propor e, quando aprovado, apoiar a implantação de medidas corretivas para reduzir o risco;</p>
+            <p>VIII.Zelar pelo cumprimento dos termos desta política;</p>
+            <p>IX.Apoiar a gestão das violações de dados pessoais, garantindo tratamento adequado e comunicando, em prazo razoável, a autoridade nacional e titulares afetados pela violação sempre que esta representar risco ou dano relevante aos titulares.</p>
+        
+        <p class="enfase">SEGURANÇA DA INFORMAÇÃO:</p>
+            <p>I.Adotar medidas de segurança, tanto técnicas quanto administrativas, aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de tratamento inadequado ou ilícito, conforme padrões mínimos recomendados pela autoridade nacional de proteção de dados pessoais;</p>
+            <p>II.Realizar o tratamento de incidentes de Segurança da Informação que envolvam o tratamento de dados pessoais, garantindo sua detecção, contenção, eliminação e recuperação dentro de um prazo razoável;</p>
+            <p>III.Apoiar o Encarregado pelo tratamento de dados pessoais na comunicação à autoridade nacional e ao titular dos dados pessoais em casos de ocorrência de incidente de segurança que possam acarretar risco ou dano relevante aos titulares.</p>
+        
+        <p class="enfase">COLABORADORES EM GERAL:</p>
+            <p>I.Ler, compreender e cumprir integralmente os termos da Política de Privacidade de Dados, bem como as demais políticas e procedimentos de proteção de dados pessoais aplicáveis;</p>
+            <p>II.Encaminhar quaisquer dúvidas e/ou pedidos de esclarecimento sobre a Política de Privacidade de Dados (PO-TI-SI-016), suas políticas e procedimentos ao Encarregado pelo Tratamento de Dados Pessoais ou, quando pertinente, ao Comitê de Privacidade e Proteção de Dados Pessoais;</p>
+            <p>III.Comunicar ao Comitê de Privacidade e Proteção de Dados Pessoais e ao Encarregado pelo Tratamento de Dados Pessoais qualquer evento que viole esta Política ou coloque ou possa vir a colocar em risco Dados Pessoais tratados pela CACAU SHOW; </p>
+            <p>IV.Assinar o Termo de Uso de Sistemas de Informação e Recursos de Tecnologia (TR-TI-SI-001), formalizando a ciência e o aceite integral das disposições da Política Geral de Segurança da Informação (PO-TI-SI-001) e Política de Privacidade de Dados (PO-TI-SI-016), bem como as políticas e procedimentos de privacidade e proteção de dados pessoais, assumindo responsabilidade pelo seu cumprimento;</p>
+            <p>V.Responder pela inobservância desta e demais políticas e procedimentos relacionados ao tratamento de Dados Pessoais, conforme definido no item sanções e punições.</p>
+        
+        <p class="enfase">5.DOCUMENTAÇÃO/REFERÊNCIAS E SISTEMA</p>
+            <p>I.Ferramenta de Suporte: SysAid</p>
+            <p>II.Ferramenta de CRM (Expansão): Scalink</p>
+            <p>III.Política Geral de Segurança da Informação (PO-TI-SI-001)</p>
+            <p>IV.Termo de Responsabilidade e Uso dos Sistemas de Informação e Recursos de Tecnologia (TR-TI-SI-001)</p>
+            <p>V.ANEXO I – POLÍTICA DE PRIVACIDADE PARA USO EXTERNO</p>
+
+        <p class="enfase">6.DIRETRIZES</p>
+            <p>A Presidência, Diretoria Executiva e o Comitê Gestor de Privacidade e Proteção de Dados Pessoais (CPPD) estão comprometidos com uma gestão efetiva da Proteção de Dados Pessoais na CACAU SHOW. Desta forma, adotam todas medidas cabíveis para garantir que esta política seja adequadamente comunicada, entendida e seguida em todos os níveis da organização. Revisões periódicas serão realizadas para garantir sua contínua pertinência e adequação às necessidades da CACAU SHOW.</p>
+        <p class="enfase">É POLÍTICA DA CACAU SHOW:</p>
+            <p>I.Prezar pela escolha do titular de permitir ou não o tratamento de seus dados pessoais, excetuando-se casos em que a lei aplicável permitir especificamente o processamento de dados pessoais sem o consentimento do titular;</p>
+            <p>II.Prezar que o objetivo do tratamento de dados pessoais esteja em conformidade com a legislação vigente e de acordo com uma base legal permitida;</p>
+            <p>III.Comunicar, de forma clara e adequadamente adaptada às circunstâncias, o tratamento de dados pessoais ao titular, antes do momento em que os dados são coletados ou usados pela primeira vez para um novo propósito;</p>
+            <p>IV.Sempre que necessário, fornecer ao titular explicações suficientes sobre o tratamento de seus dados pessoais, conforme previsto na legislação vigente;</p>
+            <p>V.Limitar a coleta de dados pessoais estritamente ao que é permitido de acordo com a legislação vigente, e os objetivos especificados na coleta do consentimento do titular dos dados pessoais, minimizando, onde possível, a coleta dos referidos dados pessoais;</p>
+            <p>VI.Limitar o uso, retenção, divulgação e transferência de dados pessoais ao necessário para cumprir com objetivos específicos, explícitos e legítimos;</p>
+            <p>VII.Reter dados pessoais apenas pelo tempo necessário para cumprir os propósitos declarados e, posteriormente, destruí-los, bloqueá-los ou anonimizá-los com segurança;</p>
+            <p>VIII.Bloquear o acesso a dados pessoais e não realizar mais nenhum tratamento quando os propósitos declarados expirarem, mas a retenção dos dados pessoais for exigida pela legislação vigente;</p>
+            <p>IX.Garantir a precisão e qualidade dos dados pessoais tratados, excetuando-se casos em que exista uma base legal ou normativa para manter dados desatualizados;</p>
+            <p>X.Fornecer aos titulares dos dados pessoais tratados, informações claras e facilmente acessíveis sobre as políticas, procedimentos e práticas com relação ao tratamento de dados pessoais realizado pela organização, incluindo quais dados são efetivamente tratados, a finalidade desse tratamento e informações sobre como entrar em contato para obter maiores detalhes;</p>
+            <p>XI.Notificar titulares quando ocorrerem alterações significativas no tratamento dos seus dados pessoais;</p>
+            <p>XII.Garantir que titulares tenham a possibilidade de acessar e revisar seus dados pessoais, desde que sua identidade seja autenticada com um nível apropriado de garantia, e que não exista nenhuma restrição legal a esse acesso ou a revisão dos dados pessoais;</p>
+            <p>XIII.Garantir a rastreabilidade e prestação de contas durante todo o tratamento de dados pessoais, incluindo quando dados pessoais forem compartilhados com terceiros;</p>
+            <p>XIV.Tratar integralmente violações de dados, garantindo que sejam adequadamente registradas, classificadas, investigadas, corrigidas e documentadas;</p>
+            <p>XV.Garantir que, na ocorrência de uma violação de segurança de dados pessoais, todas as partes interessadas serão notificadas, conforme requisitos e prazos previstos na legislação vigente;</p>
+            <p>XVI.Documentar e comunicar, conforme apropriado, todas as políticas, procedimentos e práticas relacionadas à privacidade e proteção de dados;</p>
+            <p>XVII.Indicar um responsável por documentar, implementar e comunicar políticas, procedimentos e práticas relacionadas à privacidade e proteção de dados;</p>
+            <p>XVIII.Adotar controles de segurança da informação, tanto técnicos quanto administrativos, suficientes para garantir níveis de proteção adequados para Dados Pessoais (maiores informações na política PO-TI-SI-001);</p>
+            <p>XIX.Disponibilizar políticas, normas e procedimentos para proteção de dados pessoais a todas as partes interessadas e autorizadas, tais como: Colaboradores, terceiros contratados e, onde pertinente, clientes;</p>
+            <p>XX.Promover a educação e a conscientização de colaboradores, terceiros contratados e, onde pertinente, parceiros e clientes, sobre as práticas de proteção de dados pessoais adotadas pela CACAU SHOW, conforme Política de Privacidade para Uso Externo;</p>
+            <p>XXI.Melhorar continuamente a Gestão de Proteção de Dados Pessoais através da definição e revisão sistemática de objetivos de privacidade e proteção de dados pessoais em todos os níveis da organização;</p>
+            <p>XXII.Prezar para que dados pessoais não sejam usados para fins discriminatórios, ilícitos ou abusivos;</p>
+            <p>XXIII.Atuar em conformidade com leis e regulamentações de proteção de Dados Pessoais.</p>
+
+        <p class="enfase">7.SANÇÕES E PUNIÇÕES</p>
+            <p>Sanções e punições serão aplicadas conforme previsto na Política Geral de Segurança da Informação (PO-TI-SI-001).</p>
+            <p>Para o caso de violações que impliquem em atividades ilegais, ou que possam incorrer em riscos aos titulares de dados pessoais, ou dano a CACAU SHOW, o infrator será responsabilizado pelos prejuízos, cabendo aplicação das medidas judiciais pertinentes sem prejuízo aos termos descritos na Política Geral de Segurança da Informação.</p>
+        
+        <p class="enfase">8.CASOS OMISSOS</p>
+            <p>Os casos omissos serão avaliados pelo Comitê de Privacidade e Proteção de Dados Pessoais para posterior deliberação.</p>
+            <p>As diretrizes estabelecidas nesta política e nas demais políticas e procedimentos de segurança, não se esgotam em razão da contínua evolução tecnológica, da legislação vigente e constante surgimento de novas ameaças e requisitos. Desta forma, não se constitui rol enumerativo, sendo obrigação do colaborador usuário da informação da CACAU SHOW adotar, sempre que possível, outras medidas de segurança além das aqui previstas, com o objetivo de garantir a privacidade e proteção de dados pessoais tratados pela CACAU SHOW.</p>
+
+        <p class="enfase">9.EXCEÇÕES</p>
+            <p>I.Não há.</p>
+
+        <p class="enfase">10.CONSIDERAÇÕES FINAIS</p>
+            <p>I.Esta política é revisada com periodicidade anual ou conforme o entendimento do CPPD.</p>
+            <p>II.A Política de Privacidade de Dados é aprovada pelo CPPD, em conjunto com a Diretoria da Cacau Show e demais empresas pertencentes ao grupo Cacau Show.</p>-->
+                <p class="enfase">POLÍTICA DE PRIVACIDADE:</p>
+                    <p>Por favor, leia esta Política de Privacidade e Proteção de Dados Pessoais cuidadosamente para entender nossas políticas e práticas sobre seus Dados Pessoais e como o tratamento destes dados é realizado.</p>
+                    <p>Esta Política se aplica a indivíduos (pessoas naturais) que interagem com serviços da Cacau Show como visitantes, consumidores e clientes (“Você”). Esta Política explica como seus Dados Pessoais são coletados, usados, tratados, divulgados e protegidos pela CACAU SHOW (referido nessa política como “CACAU SHOW”, “Nós”, “Conosco”). Ela também informa como Você pode acessar e atualizar seus Dados Pessoais, e tomar certas decisões sobre como seus Dados Pessoais são utilizados.</p>
+                    <p>Esta Política abrange nossas atividades de coleta de dados tanto online quanto offline, abrangendo os Dados Pessoais que Nós coletamos por meio de nossos vários canais, incluindo – mas não limitado a – Sites na web, Aplicativos, Redes Sociais de terceiros, Serviço de Atendimento ao Consumidor, Pontos de Venda, Pesquisas e Eventos. Por favor, note que Nós poderemos agregar Dados Pessoais combinados de diferentes fontes (por exemplo, nosso site e eventos offline). Como parte disso, Nós combinamos os Dados Pessoais que foram originalmente coletados por diferentes entidades do grupo CACAU SHOW ou de nossos parceiros. Você pode consultar a seção “Sobre seus direitos referentes a Dados Pessoais” para obter mais informações sobre como se opor a isso.</p>
+                    <p>Em alguns casos específicos, se Você decidir por não nos fornecer seus Dados Pessoais apontados como necessários (Nós indicaremos quando esse for o caso, por exemplo, colocando explicitamente essa informação em nossos formulários de registro), Nós talvez não possamos fornecer a Você nossos produtos e/ou serviços.</p>
+                <p class="enfase">1.DEFINIÇÕES:</p>
+                <p>Para fins de entendimento e interpretação desta Política, os termos elencados abaixo possuem as seguintes definições:</p>
+                <p>I.AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS PESSOAIS (ANPD): órgão da administração pública responsável por zelar, implementar e fiscalizar o cumprimento da Lei Geral de Proteção de Dados Pessoais (LEI Nº 13.709, DE 14 DE AGOSTO DE 2018) em todo território nacional brasileiro.</p>
+                <p>II.LGPD:  Lei Geral de Proteção de Dados Pessoais. Lei nº 13.709, de 14 de agosto de 2018.</p>
+                <p>III.TITULAR: pessoa natural a quem se referem os dados pessoais que são objeto de tratamento.</p>
+                <p>IV.CONTROLADOR: pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais.</p>
+                <p>V.OPERADOR: pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador.</p>
+                <p>VI.ENCARREGADO DE DADOS OU DPO: pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o Controlador, os Titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD);</p>
+                <p>VII.CONSENTIMENTO: manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada.</p>
+                <p>VIII.DADO PESSOAL: informação relacionada a pessoa natural identificada ou identificável.</p>
+                <p>IX.DADO PESSOAL SENSÍVEL: dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.</p>
+                <p>X.DADO ANONIMIZADO: dado relativo ao titular que não possa ser identificado, considerando a utilização de meios técnicos razoáveis e disponíveis na ocasião de seu tratamento.</p>
+                <p>XI.BLOQUEIO: suspensão temporária de qualquer operação de tratamento, mediante guarda do dado pessoal ou do banco de dados.</p>
+                <p>XII.ELIMINAÇÃO: exclusão de dado ou de conjunto de dados armazenados em banco de dados, independentemente do procedimento empregado.</p>
+                <p>XIII.TRATAMENTO DE DADOS PESSOAIS: toda operação realizada com dados pessoais, como as que se referem a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração.</p>
+                <p>XIV.SEGURANÇA DA INFORMAÇÃO: a preservação das propriedades de confidencialidade, integridade e disponibilidade das informações da CACAU SHOW.</p>
+                <p class="enfase">2.FONTE DE DADOS PESSOAIS:</p>
+                <p>Nós coletamos seus Dados Pessoais através das seguintes fontes:</p>
+                <p>I.Sites oficiais da CACAU SHOW: Todos os nossos sites podem ser utilizados para coleta de dados pessoais. Isso inclui tanto site que operamos diretamente através dos nossos domínios e endereços IPs, quanto sites ou páginas que Nós estabelecemos em serviços de terceiros, como Facebook, LinkedIn, Instagram e demais terceiros que ofertam esse tipo de serviço.</p>
+                <p>II.Correio Eletrônico e sistemas de troca de mensagens instantâneas: Serviços utilizados para manter comunicações eletrônicas entre Você e a CACAU SHOW, incluindo aqueles disponibilizados diretamente por Nós, ou serviços de terceiros como WhatsApp, Telegram, SMS (serviço de mensagens curtas) e similares.</p>
+                <p>III.Aplicativos móveis da CACAU SHOW: Aplicativos móveis fornecidos diretamente por Nós ou através de serviços de terceiros como Google ou Apple.</p>
+                <p>IV.Atendimento ao consumidor e central de vendas: Comunicações realizadas com Você através das nossas lojas,  centrais de atendimento e vendas.</p>
+                <p>V.Anúncios, propagandas e formulários online: Interações com qualquer tipo de anúncios, propagandas e formulários online oficiais da CACAU SHOW.</p>
+                <p>VI.Registros offline: Registros preenchidos offline, distribuídos durante eventos e outras interações com a CACAU SHOW.</p>
+                <p>VII.Portaria: Agendamento de uma visita, ou na recepção dos visitantes, terceiro ou parceiro que pretendem acessar as dependências da empresa/instituição.</p>
+                <p>VIII.Dados recebidos de terceiros: Incluindo, mas não limitado a redes sociais e sites de terceiros como, por exemplo, Facebook, Instagram, LinkedIn e similares, serviços de agregadores de dados, canais de veiculação de propaganda online, parceiros da CACAU SHOW, fontes públicas e dados recebidos durante aquisição de outras empresas.</p>
+                <p class="enfase">3.QUAIS DADOS PESSOAIS QUE COLETAMOS:</p>
+                <p>Durante sua interação junto a CACAU SHOW, usando uma das fontes de coleta previamente mencionadas, podemos coletar vários tipos de dados pessoais sobre Você, conforme exposto a seguir:</p>
+                <p>I.Informações de Contato: Inclui qualquer tipo de informação que possa facilitar nosso contato com Você, incluindo seu endereço físico de correspondência, números de telefone, endereços de correio eletrônico, sites e perfis em redes sociais.</p>
+                <p>II.Informações de login: Inclui informações para se identificar e autenticar em serviços fornecidos pela CACAU SHOW, incluindo seu nome de registro (login), senha em formato irrecuperável (criptografado), e perguntas de segurança.</p>
+                <p>III.Informações demográficas e seus interesses: Qualquer informação que possa descrever seus dados demográficos, hábitos ou suas características de comportamento, incluindo itens como seu aniversário, data de nascimento, idade ou faixa etária, gênero, localização geográfica, produtos favoritos, hobbies e passatempos, demais interesses e informações familiares ou sobre seu estilo de vida.</p>
+                <p>IV.Informações técnicas sobre seus equipamentos computacionais ou dispositivos móveis: Detalhes sobre o seu computador ou outro dispositivo portátil que foi utilizado para acessar um de nossos sites, serviços ou aplicativos, incluindo o registro do endereço IP utilizado para conectar seu computador ou dispositivo à internet, incluindo sua localização geográfica, o tipo e a versão de sistema operacional e o tipo e a versão do navegador da web. Se Você acessar um site ou aplicativo da CACAU SHOW usando um dispositivo móvel, como um celular inteligente ou tablet, as informações coletadas também incluirão, sempre que permitido, o ID de dispositivo exclusivo de seu telefone, a localização geográfica e outros dados similares do dispositivo móvel.</p>
+                <p>V.Informações sobre como Você utiliza nossos sites e serviços: Durante sua interação com nossos sites e serviços, Nós utilizamos tecnologias de coleta automática de dados para capturar informações sobre as ações que Você tomou. Isso pode incluir detalhes como em quais links Você clica, quais páginas ou conteúdos Você visualiza e por quanto tempo, e outras informações e estatísticas semelhantes sobre suas interações, como tempos de resposta a conteúdo, erros de download e duração das visitas a determinadas páginas. Essas informações são capturadas por meio de tecnologias automatizadas, como Cookies (Cookies de navegador, Cookies Flash e similares) e web beacons, e também via rastreamento de terceiros. Você possui total liberdade para se opor à utilização de tais tecnologias, para isso consulte os detalhes, na Seção “Sobre seus direitos referentes a Dados Pessoais”.</p>
+                <p>VI.Pesquisas de mercado e feedback de consumidores: São informações que Você compartilha voluntariamente com a CACAU SHOW sobre sua experiência de uso de nossos produtos e serviços.</p>
+                <p>VII.Conteúdo gerado por consumidores: Incluindo qualquer conteúdo que Você cria e compartilha com a CACAU SHOW em redes sociais de terceiros ou por meio de carregamento para um de nossos sites, aplicativos e demais serviços online e offline, incluindo o uso de aplicativos de rede social de terceiros, como o Facebook, Instagram, LinkedIn e similares. Esses dados incluem textos, comentários, artigos, fotos, vídeos, histórias pessoais ou outros conteúdos e mídias semelhantes. Sempre que permitido, Nós coletamos e publicamos conteúdos gerados por consumidores em conexão com uma variedade de atividades, incluindo divulgação de produtos e serviços da CACAU SHOW, concursos, premiações e outras promoções, recursos de comunidade do site, engajamento de consumidores e redes sociais de terceiros.</p>
+                <p>VIII.Informações de redes sociais de terceiros: Trata-se de quaisquer dados que Você compartilha publicamente em uma rede social de terceiros ou informações que fazem parte de seu perfil em uma rede social de terceiros (como o Facebook, Instagram, LinkedIn e similares) e que Você permite que a rede social de terceiros compartilhe Conosco, e canais de veiculação de propaganda online. Esses dados podem incluir detalhes como suas informações básicas de conta (nome, endereço de e-mail, gênero, data de nascimento, cidade atual, foto de perfil, ID de usuário, lista de amigos e informações similares.) e quaisquer outras informações ou atividades adicionais que Você permita que a rede social de terceiros compartilhe conosco. Nós recebemos suas informações de perfil de rede social de terceiros (ou partes delas) sempre que Você baixa um item ou interage com um aplicativo ou serviço da web da CACAU SHOW em uma rede social de terceiros, sempre que Você utiliza um recurso de rede social que é integrado a um site da CACAU SHOW ou sempre que Você interage Conosco por meio de uma rede social de terceiros. Para saber mais sobre como suas informações de uma rede social de terceiros são obtidas pela CACAU SHOW ou para optar por não compartilhar essas informações de rede social, visite o site da rede social de terceiros específica.</p>
+                <p>IX.Informações financeiras e de pagamento: Quaisquer dados que a CACAU SHOW necessita para atender a um pedido, ou que Você usa para fazer uma compra, como os dados de seu cartão de débito ou crédito (nome do titular do cartão, número do cartão, data de validade etc.) ou outras formas de pagamento utilizadas. A CACAU SHOW ou nossos prestadores de serviço de processamento de pagamentos manuseia suas informações financeiras e de pagamento em conformidade com as leis, normas e os padrões de segurança aplicáveis, como o PCI DSS (“Payment Card Industry Secutiry Standards Council”).</p>
+                <p>X.Contatos com nosso Serviço de Atendimento ao Consumidor e Central de Vendas: Suas interações com nossos Serviço de Atendimento ao Consumidor e Central de Vendas podem ser gravadas ou ouvidas, de acordo com as leis aplicáveis, para necessidades operacionais da CACAU SHOW. Detalhes de informações financeiras e de pagamentos não são gravados. Quando exigido por lei, Você será informado sobre tal gravação ainda no início de sua chamada.</p>
+                <p>XI.Dados Pessoais Sensíveis: A CACAU SHOW não lida normalmente com Dados Pessoais considerados sensíveis de acordo com a legislação vigente, dessa forma não temos a intenção de coletar ou processar dados pessoais sensíveis no curso normal de suas interações com nossos produtos ou serviços. Quando houver legítimo interesse ou for necessário processar seus dados pessoais sensíveis, por qualquer motivo, nós obteremos seu prévio, expresso e formal consentimento para qualquer processamento ou para qualquer tratamento que for voluntário (por exemplo, para finalidades de marketing). Se processarmos seus dados pessoais sensíveis para outras finalidades, Nós nos apoiamos nas seguintes bases legais: (i) detecção e prevenção de crime; e (ii) cumprimento de lei aplicável.</p>
+                <p class="enfase">4.SOBRE DADOS PESSOAIS DE CRIANÇAS E ADOLESCENTES:</p>
+                <p>A CACAU SHOW pode coletar dados pessoais de crianças e adolescentes, desde que haja o consentimento explícito dos seus pais ou responsáveis legais, e de acordo com as regras da legislação vigente.</p>
+                <p class="enfase">5.SOBRE O USO DE COOKIES, ARQUIVOS DE REGISTROS (LOGS) E SIMILARES:</p>
+                <p>Cookies são pequenos arquivos de texto que podem ser colocados no seu computador ou dispositivo portátil por sites ou serviços na web que Você utiliza. São utilizados para garantir o bom funcionamento de sites e demais serviços online, assim como para fornecer informações aos proprietários do site ou serviço online.</p>
+                <p>Cookies são utilizados para melhorar o uso e a funcionalidade dos sites e demais serviços na web compatíveis da CACAU SHOW e entender melhor como nossos visitantes utilizam os nossos sites e serviços online, bem como as ferramentas e serviços por eles oferecidos. Os Cookies nos facilitam o processo de adaptar os sites da CACAU SHOW às suas necessidades pessoais, facilitando sempre que possível o seu uso e o recebimento de feedback da satisfação dos nossos consumidores.</p>
+                <p>A CACAU SHOW usa os seguintes tipos de Cookies em seus sites e serviços compatíveis:</p>
+                <p>I.Cookies de sessão: São Cookies de uso temporário, que são excluídos no momento em que Você fecha o seu navegador. Quando Você reinicia o seu navegador e volta para o site que criou o cookie, esse site trata Você como um novo visitante.</p>
+                <p>II.Cookies persistentes: São aqueles Cookies que permanecem no seu navegador até Você deletá-los manualmente ou até o seu navegador deletá-los de acordo com o período de duração estabelecido pelo cookie. Esses Cookies reconhecerão seu retorno como visitante a um site ou serviço da CACAU SHOW.</p>
+                <p>III.Cookies necessários: São Cookies estritamente necessários para a operação de um site ou serviço compatível da CACAU SHOW. Eles permitem que Você navegue pelo site e use nossos recursos.</p>
+                <p>IV.Cookies que nos mandam informações sobre Você: Nós colocamos esse tipo de Cookies em um site ou serviço compatível da CACAU SHOW e este tipo de Cookie só podem ser lidos por nossos sites e serviços compatíveis.</p>
+                <p>V.Cookies em propagandas da CACAU SHOW: Colocamos Cookies em propagandas e anúncios que são exibidos em sites e serviços compatíveis de terceiros. Obtemos informações através desses Cookies quando Você clica ou interage com a propaganda ou anúncio. Neste caso, a CACAU SHOW está colocando um cookie “de terceiro”. Nós podemos usar esses dados obtidos por Cookies de terceiros para mandar-lhe outras propagandas que acreditamos ser relevantes ou de seu interesse com base no seu comportamento anterior.</p>
+                <p>VI.Cookies que compartilham suas informações para terceiros: São Cookies colocados em um site da CACAU SHOW por nossas companhias parceiras, como serviços de anúncios online. Eles podem usar os dados coletados por esses Cookies para lhe enviar anonimamente propagandas direcionadas de outros sites, com base em sua visita a sites ou serviços compatíveis da CACAU SHOW.</p>
+                <p>Os sites e serviços compatíveis da CACAU SHOW também podem usar outras tecnologias de rastreamento similares a Cookies, que podem coletar informações tais como endereços IP, arquivos de registro e sinalizadores da web, dentre outras. Esses dados também são utilizados para nos ajudar a adaptar os sites e demais serviços compatíveis da CACAU SHOW às suas necessidades pessoais.</p>
+                <p>Veja mais detalhes a seguir:</p>
+                <p>I.Endereços de IP: Um endereço de IP é um número usado na internet ou em uma rede para identificar seu computador. Todas as vezes que Você se conecta na internet seu computador recebe um IP atribuído pelo seu provedor de serviços de internet. Podemos registrar Endereços de IP para as seguintes finalidades:</p>
+                <p>a.Tratamento de problemas técnicos;</p>
+                <p>b.Manutenção da proteção e segurança dos nossos sites e demais serviços online;</p>
+                <p>c.Obter uma melhor compreensão de como nossos sites e demais serviços online são utilizados;</p>
+                <p>d.Adaptar nosso conteúdo às suas necessidades, dependendo da sua localização geográfica.</p>
+                <p>II.Arquivos de Registro: A CACAU SHOW ou um terceiro trabalhando em nosso nome, poderá coletar informações na forma de arquivos de registro (logs) que detalham as atividades do site e coletam estatísticas sobre os hábitos de navegação do usuário. Normalmente esses registros são gerados anonimamente e nos ajudam a entender detalhes como:</p>
+                <p>a.O tipo de navegador e o sistema utilizado pelos usuários de nossos sites ou serviços online;</p>
+                <p>b.Detalhes sobre a sessão do usuário, incluindo a URL de origem, a data, hora e quais páginas o usuário visitou em nossos sites e serviços compatíveis, e quanto tempo o usuário permaneceu utilizando-os;</p>
+                <p>c.Demais detalhes de navegação ou de contagem de cliques incluindo relatórios de tráfego de site, contagem de visitantes únicos e dados similares.</p>
+                <p>III.Sinalizadores da web (web beacons): Nós podemos utilizar os sinalizadores da web (ou GIFs transparentes) nos sites da CACAU SHOW. Os sinalizadores da web (também conhecidos como web bugs ou web beacons) são pequenas sequências de código que permitem a entrega de uma imagem gráfica em uma página da web com o objetivo de transferir dados de volta para nós. Usamos as informações dos sinalizadores da web para os mais variados propósitos, incluindo:</p>
+                <p>a.Entender como um usuário responde a campanhas de e-mail;</p>
+                <p>b.Relatórios de tráfego dos nossos sites e serviços compatíveis;</p>
+                <p>c.Realizar a contagem de visitantes únicos, auditoria e relatórios de propaganda e e-mail, e personalização em nossos sites e demais serviços compatíveis.</p>
+                <p>É importante lembrar que cabe a Você assegurar que as configurações do seu computador ou dispositivo portátil reflitam se Você consente em aceitar Cookies ou não.</p>
+                <p>A maioria dos navegadores permite que Você estabeleça regras para avisá-lo antes de aceitar Cookies ou simplesmente recusá-los. Você não precisa ter Cookies habilitados para usar ou navegar a maior parte dos sites e serviços online da CACAU SHOW, entretanto neste caso não podemos assegurar que Você vai conseguir acessar todos os seus recursos. Recomendamos que Você veja no botão “ajuda” no seu navegador como realizar esse tipo de configuração. Lembre-se que se Você usar navegadores, ou mesmo computadores e/ou dispositivos portáteis diferentes em locais diferentes, Você precisará se assegurar de que cada dispositivo e navegador esteja ajustado para suas preferências pessoais de Cookies.</p>
+                <p>Como os nossos sinalizadores da web (web beacons) podem fazer parte de uma página da web, não é possível excluir (“opt-out”) esse tipo de recurso, mas Você pode torná-lo completamente não-funcional ativando o recurso “opt-out” para os Cookies colocados por esse sinalizador.</p>
+                <p class="enfase">6.SOBRE O USO DE SEUS DADOS PESSOAIS:</p>
+                <p>Os itens a seguir descrevem as finalidades para as quais a CACAU SHOW coleta seus Dados Pessoais, e os diferentes tipos de Dados Pessoais que coletamos para cada finalidade. Note, por favor, que nem todos os usos abaixo serão relevantes para todos os indivíduos e podem se aplicar apenas a situações específicas.</p>
+                <p>I.Serviços ao consumidor: Seus Dados Pessoais são utilizados para finalidade de prestar serviços a Você como consumidor, incluindo responder a suas dúvidas, questionamentos e sugestões. Usualmente, isso requer certas informações pessoais de contato e informações sobre o motivo de seu questionamento, dúvida ou sugestão, por exemplo, qual foi o seu pedido, se existe um problema técnico, questão ou reclamação sobre produto, questionamento em geral.</p>
+                <p>a.Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1.Cumprir obrigações contratuais;</p>
+                <p>2.Cumprir obrigações legais;</p>
+                <p>3.Nossos interesses legítimos.</p>
+                <p>b.Nossos interesses legítimos nessa situação:</p>
+                <p>1.Melhorar continuamente produtos e serviços da CACAU SHOW;</p>
+                <p>2.Melhorar continuamente a efetividade do nosso atendimento ao consumidor.</p>
+                <p>II.Realização de concursos, promoções e demais ações de marketing: Com seu consentimento (quando necessário conforme legislação vigente), a CACAU SHOW utiliza seus Dados Pessoais para fornecer informações sobre produtos ou serviços como, por exemplo, comunicações de marketing, campanhas publicitárias ou promoções. Isso pode ser feito por diversos meios de comunicação, incluindo o e-mail, anúncios, envio de mensagens por SMS, ligações telefônicas e correspondências postais (conforme permitido pela legislação vigente), além de nossos próprios sites e/ou sites e redes sociais de terceiros. Nesta situação, o uso de seus Dados Pessoais é completamente voluntário, o que significa que Você pode se opor, ou mesmo retirar seu consentimento a qualquer momento, ao processamento de seus Dados Pessoais para estas finalidades. Para obter maiores detalhes sobre como alterar suas preferências sobre comunicações de marketing, veja a seção “Sobre seus direitos referentes a Dados Pessoais” nesta política. Para mais informações sobre nossos concursos e outras promoções, veja os regulamentos ou detalhes postados sobre cada concurso/promoção.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Cumprir obrigações contratuais;</p>
+                <p>2. Nossos interesses legítimos;</p>
+                <p>3. Obtenção do seu consentimento (quando necessário).</p>
+                <p>b. Nossos interesses legítimos nessa situação:</p>
+                <p>1. Entender quais de nossos produtos e serviços podem interessar a Você e fornecer informações sobre eles;</p>
+                <p>2. Definir perfis de consumidores para novos produtos ou serviços.</p>
+                <p>III. Redes sociais e sites de terceiros: Usamos seus Dados Pessoais quando Você interage com funções de redes sociais e sites de terceiros, como “curtir”, para fornecer anúncios e interagir com Você em redes sociais de terceiros. A forma como essas interações funcionam, os dados de perfil que a CACAU SHOW obtém sobre Você, e como cancelá-los (“opt-out”) podem ser entendidos acessando as políticas de privacidade diretamente nas respectivas redes sociais e sites de terceiros.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Nossos interesses legítimos;</p>
+                <p>2. Obtenção do seu consentimento (quando necessário).</p>
+                <p>b. Nossos interesses legítimos nessa situação:</p>
+                <p>1. Entender quais de nossos produtos e serviços podem interessar a Você e fornecer informações sobre eles;</p>
+                <p>2. Definir perfis de consumidores para novos produtos ou serviços.</p>
+                <p>IV. Personalização (offline e online): Com base em seu consentimento (quando exigido conforme legislação vigente), a CACAU SHOW utiliza seus Dados Pessoais (i) para entender suas preferências e hábitos, (ii) para antecipar suas necessidades, baseadas em nosso entendimento do seu perfil, (iii) para melhorar e personalizar sua experiência em nossos sites e aplicativos; (iv) para assegurar quer o conteúdo de nossos sites e aplicativos seja otimizado para Você e para seu computador ou dispositivo; (v) para enviar a Você publicidade e conteúdo dirigidos, e (vi) para permitir que Você participe de funções interativas, sempre que decidir fazê-lo. Nesta situação, o uso de seus Dados Pessoais é completamente voluntário, o que significa que Você pode se opor, ou mesmo retirar seu consentimento a qualquer momento, ao processamento de seus Dados Pessoais para estas finalidades. Para obter maiores detalhes, veja a seção “Sobre seus direitos referentes a Dados Pessoais” nesta política.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Nossos interesses legítimos;</p>
+                <p>2. Obtenção do seu consentimento (quando necessário).</p>
+                <p>b. Nossos interesses legítimos nessa situação:</p>
+                <p>1. Entender quais de nossos produtos e serviços podem interessar a Você e fornecer informações sobre eles;</p>
+                <p>2. Definir perfis de consumidores para novos produtos ou serviços.</p>
+                <p>V. Atendimento aos seus pedidos: Usamos seus Dados Pessoais para processar e enviar seus pedidos, além de informá-lo sobre a situação dos seus pedidos, corrigir endereços e conduzir verificação de identidade e outras atividades para verificação de fraudes. Isso envolve o uso de certos Dados Pessoais e, em certas situações, informações de pagamento.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Cumprir obrigações contratuais;</p>
+                <p>2. Obrigações legais;</p>
+                <p>3. Nossos interesses legítimos;</p>
+                <p>4. Obtenção do seu consentimento (quando necessário).</p>
+                <p>b. Nossos interesses legítimos nessa situação:</p>
+                <p>1. Melhoras e desenvolver novos produtos e serviços;</p>
+                <p>2. Ser mais eficientes no atendimento aos seus pedidos;</p>
+                <p>3. Proteger nossos sistemas de informação, recursos de tecnologia e colaboradores;</p>
+                <p>4. Cumprir integralmente obrigações legais.</p>
+                <p>V. Motivos legais ou fusão/aquisição: Caso a CACAU SHOW ou seus bens sofram operação societária ou sejam adquiridos ou incorporados por outra empresa, compartilharemos seus Dados Pessoais com nossos sucessores legais, respeitando as exigências da legislação vigente. Também divulgaremos seus Dados Pessoais a terceiros (i) quando requerido pela lei aplicável; (ii) em resposta a procedimentos legais; (iii) em resposta a um pedido da autoridade legal competente; (iv) para proteger nossos direitos, privacidade, segurança ou propriedade; ou (v) para fazer cumprir os termos de qualquer acordo ou os termos do nosso site, produtos e serviços, conforme a legislação vigente.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Obrigações legais;</p>
+                <p>2. Nossos interesses legítimos.</p>
+                <p>b. Nossos interesses legítimos nessa situação:</p>
+                <p>1. Atender integralmente obrigações legais;</p>
+                <p>2. Proteger nossos sistemas de informação, recursos de tecnologia e colaboradores.</p>
+                <p>VI. Outras finalidades e situações em geral: De acordo com a legislação vigente, a CACAU SHOW utiliza seus Dados Pessoais para outras finalidades gerais de negócio, como fazer manutenção em sua conta, conduzir pesquisas internas ou de mercado e medir a efetividade de nossas campanhas publicitárias. Nós nos reservamos o direito, se Você tiver contas CACAU SHOW, de integrar estas contas em uma conta única. Nós também usamos seus Dados Pessoais para gerenciamento e operação de nossas comunicações, TI e sistemas de segurança e proteção de dados.</p>
+                <p>a. Motivo para uso dos seus dados pessoais nessa situação:</p>
+                <p>1. Cumprir obrigações contratuais;</p>
+                <p>2.Obrigações legais;</p>
+                <p>3.Nossos interesses legítimos;</p>
+                <p>4.Obtenção do seu consentimento (quando necessário).</p>
+                <p>b.Nossos interesses legítimos nessa situação:</p>
+                <p>1.Melhorar e desenvolver novos produtos e serviços;</p>
+                <p>2.Ser mais eficientes no atendimento aos seus pedidos;</p>
+                <p>3.Atender integralmente obrigações legais;</p>
+                <p>4.roteger nossos sistemas de informação, recursos de tecnologia e colaboradores.</p>
+                <p class="enfase">7.SOBRE A DIVULGAÇÃO DE SEUS DADOS PESSOAIS:</p>
+                <p>Além das entidades que fazem parte da CACAU SHOW, nós podemos compartilhar seus Dados Pessoais com os seguintes tipos de organizações de terceiros.</p>
+                <p>I.Provedores de serviços: Incluem companhias externas que são utilizadas pela CACAU SHOW para auxiliar a operar nosso negócio. Provedores de serviços e seus colaboradores selecionados, só estão autorizados a acessar seus Dados Pessoais em nome da CACAU SHOW para as tarefas específicas, que forem requisitadas a eles com base em nossas instruções diretas. Nossos provedores de serviços são obrigados contratualmente a manter seus Dados Pessoais confidenciais e seguros, e em casos de violação respondem solidariamente conforme a legislação vigente.</p>
+                <p>II.Agências de análise de crédito, cobrança de dívidas e serviços financeiros:  Conforme permitido pela lei aplicável, agências de análise de crédito e/ou de cobrança de dívidas são empresas externas que a CACAU SHOW pode utilizar para nos auxiliarem a verificar a situação do seu crédito ou para coletar pagamentos vencidos.</p>
+                <p>III.Empresas terceiras que usam Dados Pessoais para suas próprias finalidades de marketing: Excetuando-se situações em que Você deu seu consentimento específico, a CACAU SHOW não licencia ou vende seus Dados Pessoais a empresas terceiras para suas próprias finalidades de marketing. Em casos em que esse tipo de compartilhamento ocorra, a identidade destas empresas terceiras será revelada antes da obtenção do seu consentimento.</p>
+                <p>IV.Terceiros que usam seus Dados Pessoais por motivos legais ou devido a fusão/aquisição: Divulgaremos seus Dados Pessoais a terceiros por motivos legais ou no contexto de uma fusão ou aquisição ou incorporação ou outra operação societária na CACAU SHOW.</p>
+                <p class="enfase">8.SOBRE A RETENÇÃO E TÉRMINO DO TRATAMENTO DE SEUS DADOS PESSOAIS:</p>
+                <p>De acordo com a legislação vigente, a CACAU SHOW utiliza seus Dados Pessoais por quanto tempo for necessário para satisfazer as finalidades para as quais seus Dados Pessoais foram coletados, conforme descrito nesta política, ou para cumprir com os requerimentos legais aplicáveis.</p>
+                <p>Dados Pessoais usados para fornecer uma experiência personalizada a Você serão mantidos exclusivamente pelo tempo permitido, de acordo com a legislação vigente.</p>
+                <p>Você pode obter maiores detalhes sobre a retenção dos seus Dados Pessoais através dos canais de comunicação detalhados nesta política.</p>
+                <p>Quando no término do tratamento de seus Dados Pessoais, estes serão eliminados no âmbito e nos limites técnicos das atividades, autorizada a conservação nas situações previstas na legislação vigente.</p>
+                <p class="enfase">9.SOBRE A DIVULGAÇÃO, O ARMAZENAMENTO OU TRANSFERÊNCIA DE SEUS DADOS PESSOAIS:</p>
+                <p>A CACAU SHOW adota medidas adequadas para garantir que seus Dados Pessoais sejam mantidos de forma confidencial e segura. Entretanto, estas proteções não se aplicam a informações que Você tenha escolhido compartilhar em áreas públicas.</p>
+                <p>I.Pessoas que podem acessar seus Dados Pessoais: Seus Dados Pessoais serão processados por nossos colaboradores ou agentes autorizados, desde que estes precisem ter acesso a tais informações, dependendo dos propósitos específicos para os quais seus Dados Pessoais tenham sido coletados.</p>
+                <p>II.Medidas tomadas em ambientes operacionais: Armazenamos seus Dados Pessoais em ambientes operacionais que usam medidas de segurança razoáveis, tanto técnicas quanto administrativas, para prevenir qualquer tipo de acesso não autorizado. Seguimos protocolos razoáveis para proteger Dados Pessoais.</p>
+                <p>III.Medidas que a CACAU SHOW espera que Você tome: É importante que Você também tenha um papel em manter seus Dados Pessoais seguros. Quando criar uma conta online, por favor, assegure-se de escolher uma senha que seja forte para evitar que partes não autorizadas a adivinhem. Recomendamos que Você nunca revele ou compartilhe sua senha com outras pessoas.</p>
+                <p>Se Você usar um computador compartilhado ou público, nunca escolha a opção de lembrar seu nome de login, endereço de e-mail ou senha, e certifique-se que Você saiu da sua conta (realizou o “log out”) sempre que deixar o computador. Você também deve usar quaisquer configurações de privacidade ou controles que a CACAU SHOW fornece em nosso site, serviços ou aplicativos.</p>
+                <p>IV.Transferência de seus Dados Pessoais: Dada a natureza do nosso negócio, é possível que tenhamos que transferir seus Dados Pessoais armazenados dentro da CACAU SHOW para terceiros, de acordo com as finalidades estabelecidas nesta Política de Privacidade. Por este motivo, poderemos transferir seus Dados Pessoais para outros países, desde que estes possuam leis e regulamentações compatíveis com as vigentes no Brasil.</p>
+                <p class="enfase">10.SOBRE SEUS DIREITOS REFERENTES A DADOS PESSOAIS:</p>
+                <p>Você tem direito de confirmar a existência, acessar, revisar, modificar e/ou requisitar uma cópia eletrônica da informação dos seus Dados Pessoais que são tratados pela CACAU SHOW.</p>
+                <p>Você também tem direito de solicitar detalhes sobre a origem de seus Dados Pessoais ou o compartilhamento destes dados com terceiros.</p>
+                <p>A qualquer momento, Você também poderá limitar o uso e divulgação, ou revogar o consentimento a qualquer uma de nossas atividades de processamento de seus Dados Pessoais, excetuando-se em situações previstas na legislação vigente.</p>
+                <p>Estes direitos podem ser exercidos através dos canais de comunicação detalhados nesta política, sendo necessária a validação da sua identidade através do fornecimento de uma cópia de seu RG ou meios equivalentes de identificação, em conformidade com a legislação vigente. </p>
+                <p>Sempre que um pedido for submetido sem o fornecimento das provas necessárias a comprovação da legitimidade do titular dos dados, o pedido será automaticamente rejeitado. Ressaltamos que qualquer informação de identificação fornecida a CACAU SHOW somente será processada de acordo com e na medida permitida pelas leis vigentes.</p>
+                <p>Ressaltamos que em determinados casos, não podemos excluir seus Dados Pessoais sem também excluir sua conta de usuário. Adicionalmente, algumas situações requerem a retenção de seus Dados Pessoais depois que Você pedir sua exclusão, para satisfazer obrigações legais ou contratuais.</p>
+                <p>Quando disponíveis, nossos sites, aplicativos e serviços online podem ter uma função dedicada onde será possível Você revisar e editar os seus Dados Pessoais. Ressaltamos que a CACAU SHOW solicita a validação de sua identidade usando, por exemplo, um sistema de login com senha de acesso ou recurso similar, antes de permitir o acesso ou a modificação de seus Dados Pessoais, dessa forma garantindo que não exista acesso não autorizado à sua conta e dados pessoais associados.</p>
+                <p>A CACAU SHOW faz o máximo possível para poder atender todas as questões que Você possa ter sobre a forma a qual processamos seus Dados Pessoais. Contudo, se Você tiver preocupações não resolvidas, Você tem o direito de reclamar às autoridades de proteção de dados competentes.</p>
+                <p class="enfase">11.QUAIS SÃO SUAS ESCOLHAS SOBRE COMO UTILIZAMOS E DIVULGAMOS SEUS DADOS PESSOAIS:</p>
+                <p>A CACAU SHOW faz o máximo para dar a Você liberdade de escolha sobre os Dados Pessoais que Você nos fornece. Os seguintes mecanismos dão a Você o controle sobre o tratamento de seus Dados Pessoais:</p>
+                <p>I.Cookies/Tecnologias Similares: Você pode gerenciar o seu consentimento usando:</p>
+                <p>a.Nossas soluções de gerenciamento de consentimento;</p>
+                <p>b.As configurações do seu navegador para recusar alguns ou todos os Cookies e tecnologias similares, ou para alertá-lo quando estão sendo usados.</p>
+                <p>II.Publicidade, marketing e promoções: Você pode consentir para que seus Dados Pessoais sejam usados pela CACAU SHOW para promover nossos produtos ou serviços por meio de caixas de verificação localizadas nos formulários de registro ou respondendo questões apresentadas pelos nossos representantes. Se Você decidir que não deseja mais receber tais comunicações, Você pode cancelar sua subscrição para receber comunicações relacionadas a marketing a qualquer momento, seguindo as instruções fornecidas em tais comunicações. Para cancelar a subscrição de comunicações de marketing enviadas por qualquer meio, incluindo redes sociais de terceiros, Você pode optar por sair a qualquer tempo, cancelando sua subscrição, pelos links disponíveis em nossas comunicações, fazendo login em nossos sites, aplicativos, serviços online compatíveis ou redes sociais de terceiros, e ajustando suas preferências de usuário ou ligando diretamente para nosso serviço de atendimento ao consumidor. É importante lembrar que, mesmo com o seu cancelamento de subscrição às nossas comunicações de marketing, Você continuará a receber comunicações administrativas da CACAU SHOW, como pedidos, confirmações de transação, notificações sobre suas atividades de conta em nossos sites e serviços compatíveis, e outros anúncios importantes não relacionados a marketing.</p>
+                <p>III.Personalização (offline e online): Sempre que permitido por lei, se Você quiser que seus Dados Pessoais sejam usados pela CACAU SHOW para fornecer-lhe uma experiência personalizada ou publicidade e conteúdo dirigidos, Você pode indicar isso por meio das caixas de checagem relevantes localizadas no formulário de registro ou respondendo a perguntas apresentadas pelos nossos representantes. Se Você decidir que não quer mais se beneficiar desta personalização, Você pode optar por sair a qualquer tempo, fazendo login nos nossos sites, aplicativos e serviços compatíveis, e selecionando as preferências de usuário no perfil da sua conta ou ligando diretamente para nosso serviço de atendimento ao consumidor.</p>
+                <p>IV. Publicidade direcionada: A CACAU SHOW pode realizar parcerias com redes de anúncios e outros provedores de serviços ou anúncios, que apresentam propagandas e demais anúncios em nosso nome ou no nome de outras empresas não-afiliadas a CACAU SHOW. Alguns destes anúncios podem ser ajustados aos seus interesses, com base nas informações coletadas nos sites e demais serviços compatíveis da CACAU SHOW ou em sites de organizações não-afiliadas a CACAU SHOW. Você pode entrar em contato usando os canais de comunicação detalhados nesta política para obter mais informações sobre como gerenciar ou cancelar sua participação em publicidade direcionada.</p>
+                <p class="enfase">12. ALTERAÇÕES EM NOSSA POLÍTICA DE PRIVACIDADE:</p>
+                <p>Sempre que a CACAU SHOW decidir mudar a forma que tratamos seus Dados Pessoais, esta Política será atualizada. Nos reservamos o direito de fazer alterações às nossas práticas e a esta Política a qualquer tempo, desde que mantida a conformidade com a legislação vigente. Nós publicaremos qualquer nova versão desta Política.</p>
+                <p class="enfase">13. COMO ENTRAR EM CONTATO:</p>
+                <p>Você pode entrar em contato para:</p>
+                <p>I. Fazer perguntas ou comentários sobre esta Política e nossas práticas de privacidade e proteção de Dados Pessoais;</p>
+                <p>II. Fazer uma reclamação;</p>
+                <p>III. Confirmar a existência de tratamento de seus Dados Pessoais;</p>
+                <p>IV. Obter informações sobre como acessar seus Dados Pessoais;</p>
+                <p>V. Realizar a correção de dados pessoais incompletos, inexatos ou desatualizados;</p>
+                <p>VI. Obter informações sobre a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto na legislação vigente;</p>
+                <p>VII. Obter informações sobre a portabilidade dos seus dados pessoais a outro fornecedor de serviço ou produto, mediante requisição expressa, em conformidade com a legislação vigente;</p>
+                <p>VIII. Solicitar a eliminação dos dados pessoais tratados com o seu consentimento, excetuando-se as hipóteses previstas na legislação vigente;</p>
+                <p>IX. Solicitar detalhes das entidades públicas e privadas com as quais realizamos o compartilhamento de seus Dados Pessoais;</p>
+                <p>X. Obter informações sobre a possibilidade de não fornecer consentimento e sobre as consequências dessa negativa;</p>
+                <p>XI. Realizar a revogação do consentimento para o tratamento dos seus Dados Pessoais, excetuando-se as hipóteses previstas na legislação vigente;</p>
+                <p>XII. Demais direitos do titular dos dados pessoais, conforme legislação vigente.</p>
+                <p>Para isso, solicitamos que Você entre em contato conosco usando os seguintes canais:</p>
+                <p>a. Encarregado pelo Tratamento de Dados Pessoais:</p>
+                <p>•	Nome completo: André Boschetti Oliva</p>
+                <p>•	E-mail: dpo@cacaushow.com.br</p>
+                <p><strong>Atenção! Este e-mail é destinado exclusivamente para assuntos relacionados à LGPD. Demais temas não serão tratados ou respondidos.</strong></p>
+                <p>b. Controlador dos Dados Pessoais:</p>
+                <p>•	Razão Social: I.B.A.C. INDÚSTRIA BRASILEIRA DE ALIMENTOS E CHOCOLATES LTDA.</p>
+                <p>•	CNPJ: 61.472.205/0004-07</p>
+                <p>. Portal da Privacidade:</p>
+                <p>•	Endereço eletrônico: https://www.cacaushow.com.br/politica-privacidade</p>
+                <p>d. Pessoalmente ou por correio convencional:</p>
+                <p>•	Endereço: Estrada Antiga de Itu, n° 140, Estância São Francisco – Itapevi/SP.</p>
+                <p>A CACAU SHOW receberá, investigará e responderá, dentro de um prazo considerado razoável e estipulado em legislação vigente, qualquer solicitação ou reclamação sobre a forma como Nós tratamos seus Dados Pessoais, incluindo reclamações sobre desrespeito aos seus direitos sob as leis de privacidade e proteção de Dados Pessoais vigentes.</p>
+        <br>
+    </div>
+</body>
+    <!-- END_dwmarker -->
+
+</div>
+
+
+    <div class="row d-sm-none footer__lessInfo">
+        Menos Informa&ccedil;&otilde;es
+    </div>
+
+    <div class="row d-sm-none footer__moreInfo">
+        Mais Informa&ccedil;&otilde;es
+    </div>
+
+
+
+    <footer class="footer" id="footercontent">
+        <div class="footer__container">
+
+            <div class="footer__header">
+                <div class="footer__logo">
+                    <span class="icon-big_logo"></span>
+                </div>
+
+            </div>
+
+            <div class="row footer__main">
+                <div class="footer__internalLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="6667ebfe3df8866accdf9df876" -->
+        <ul>
+	<li><a href="../para-sua-empresa/institucional.html"><span class="icon icon-mini_logo"></span> <span class="footer__text"> Sobre a <b>Cacau Show</b> </span> </a></li>
+	<li><a href="../fazenda/fazenda.html"><span class="icon"> <img alt="" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw6c690283/footer_tree.svg" title="" /> </span> <span class="footer__text"> Nossa <b>Fazenda</b> </span> </a></li>
+	<li><a href="https://www.institutocacaushow.org.br/" target="_blank"><span class="icon"> <img alt="Grupo Cacau Show" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dwf8f8c24c/icon-cacau-group.svg" title="" /> </span> <span class="footer__text"> <b>Instituto</b> Cacau Show </span> </a></li>
+	<li><a href="https://www.eureciclo.com.br/" target="_blank"><span class="icon"> <img alt="eu reciclo" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dwa345ee6d/icon-eureciclo.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.worldcocoafoundation.org/" target="_blank"><span class="icon"> <img alt="WCF" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw9565d57e/icon-wcf.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.pactoglobal.org.br/" target="_blank"><span class="icon"> <img alt="Logo Global" src="../on/demandware.static/-/Sites-CacauShow-Library/default/dw0a962484/Logo-Global.png" style="width: 100px" title="" /> </span></a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__privacyTerms">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="0efc7e4bc1fdf95585a0a440cf" -->
+        <p>A Cacau Show se compromete em utilizar ovos de galinhas livres de gaiolas em todas as suas opera&ccedil;&otilde;es. Estamos trabalhando para garantir essa transi&ccedil;&atilde;o at&eacute; 2025. As imagens expostas neste site s&atilde;o meramente ilustrativas.</p>
+
+<p>Pre&ccedil;os apresentados na loja virtual podem variar de acordo com a regi&atilde;o. Informa&ccedil;&otilde;es sobre pre&ccedil;os, prazos de validade, estoque e origem podem ser obtidas diretamente nas lojas. &nbsp;Consulte a loja para verificar disponibilidade.</p>
+
+<p>&nbsp;</p>
+
+<p>Pre&ccedil;os, estoques, informa&ccedil;&otilde;es e condi&ccedil;&otilde;es dispon&iacute;veis no site est&atilde;o sujeitos a altera&ccedil;&otilde;es sem aviso pr&eacute;vio. *Pre&ccedil;os e produtos do Choco-Outlet s&atilde;o v&aacute;lidos somente para compras realizadas na loja virtual sujeito a disponibilidade de estoque.</p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="5f99c9d5e9032dfc2cf7d515de" -->
+        <h3>Institucional</h3>
+
+<p><a href="https://revendedor.cacaushow.com.br/revendedor/" target="_blank">Seja um Revendedor</a></p>
+
+<p><a href="../franquia.html">Seja um Franqueado</a></p>
+
+<p><a href="../para-sua-empresa/para-sua-empresa.html">&Aacute;rea para Empresas</a></p>
+
+<p><a href="https://cacaushow.gupy.io/" target="_blank">Trabalhe Conosco</a></p>
+
+<p><a href="../lingua-de-gato.html">Língua de Gato</a></p>
+
+<p><a href="../categoria/nossas-marcas.1.html">Nossas Marcas</a></p>
+
+<p><a href="../Palito_Premiado.html">Palito Premiado</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="58285c918422623e4467907384" -->
+        <h3>Pol&iacute;ticas</h3>
+
+<p><a href="../terms.html">Termos de Uso</a></p>
+
+<p><a href="privacy-policy.html">Pol&iacute;tica de Privacidade</a></p>
+
+<p><a href="../returns.html">Pol&iacute;tica de Trocas</a></p>
+
+<p><a href="../faqs.html">FAQ</a>&nbsp;</p>
+
+<p><a href="../regulamentos/Regulamentos.html">Regulamentos</a></p>
+
+<p><a href="https://sac.cacaushow.com.br/" target="_blank">SAC</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="col footer__wrapper">
+                    <div class="footer__socialLinks">
+                        
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="9aa03c4dd60ce992affce3c93c" -->
+        <ul>
+        <li><span class="social-text">Siga-nos</span></li>
+	<li><a href="https://www.facebook.com/CacauShow" target="_blank" title="Facebook"><span class="icon-social_fb"></span> </a></li>
+	<li><a href="https://www.instagram.com/cacaushow/" target="_blank" title="Instagram"><span class="icon-social_insta"></span> </a></li>
+	<li><a href="https://www.youtube.com/user/CacauShowBR" target="_blank" title="Youtube"><span class="icon-social_yb"></span> </a></li>
+	<li><a href="https://www.tiktok.com/@cacaushow" target="_blank" title="TikTok"><span class="icon-tiktok"></span> </a></li>
+	<li><a href="https://www.linkedin.com/company/cacau-show/" target="_blank" title="Linkedin"><span class="icon-social_linked"></span> </a></li>
+	<li><a href="https://twitter.com/cacaushow" target="_blank" title="Twitter"><span class="icon-social_tw"></span> </a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                    </div>
+
+                    <div class="d-none d-sm-block footer__image">
+                        <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                            alt="Cacau Show" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-sm-none footer__image">
+            <div class="row">
+                <div class="col-12">
+                    <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                        alt="Cacau Show" />
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyrightText">
+            
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="37b2ed0fd3a64c66094b85076e" -->
+        © Copyright 2023. Todos os direitos reservados.  |  Cacau Comércio Eletrônico LTDA 32.143.933/0003-96 | Endereço: Rodovia Anhanguera KM 31,7, 800, Bloco 300 Galpão 20, 21 e 22 - Area Selia, Bairro Empresarial Anhanguera, Cajamar – SP, CEP 07.753-580
+    </div> <!-- End content-asset -->
+
+
+
+
+        </div>
+    </footer>
+
+
+<div class="modal-background-changeAddress"></div>
+<div class="loading__component"></div>
+
+
+
+    
+<script defer type="text/javascript">
+  window.SmartOrderRefillSettings = {};
+  SmartOrderRefillSettings.Resources = {"SOR_CANCEL_SUBSCRIPTION_TITLE":"Assinatura cancelada!","SOR_PAUSE_SUBSCRIPTION_TITLE":"Assinatura pausada!","SOR_REACTIVE_SUBSCRIPTION_TITLE":"Reativar assinatura?","SOR_REACTIVATE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode reativar esta assinatura.","SOR_RESUBSCRIBE_TITLE":"Resubscribe","SOR_RESUBSCRIBE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode assinar novamente esta assinatura.","SOR_UPDATE_CREDIT_CARD_TITLE":"Atualizar Cartão de Crédito","SOR_GLOBAL_UPDATE_CREDIT_CARD_SAVE":"Confirmar/Atualizar Cartão de Crédito","SOR_ADD_PRODUCT_TITLE_PDP":"Select the subscription to which you would like to add this product:","SOR_ADD_PRODUCT_TITLE":"ADD PRODUCT TO THE SUBSCRIPTION","SOR_ADD_PRODUCT_WARNING":"We could not find an available product to add to this subscription. Please try again later.","SOR_UNEXPECTED_ERROR":"Erro inesperado.","SOR_ERROR_TITLE":"Error","SOR_WARNING_TITLE":"Aviso","SOR_ADDRESS_ERROR":"Unable to change the address.","SOR_PRODUCT_ERROR":"Unable to change the product.","SOR_QUANTITY_ERROR":"Unable to update product quantity.","SOR_CREDITCARD_ERROR":"Unable to update the credit card.","SOR_LOGINFROMCART_ERROR":"Sorry, this does not match our records. Check your spelling and try again.","SOR_GLOBAL_CLOSE":"Fechar","SOR_GLOBAL_CANCEL":"Cancelar","SOR_GLOBAL_SAVE":"Salvar","SOR_GLOBAL_OK":"OK","SOR_GLOBAL_OK_CANCEL":"Ok, estou ciente","SOR_GLOBAL_BACK":"Voltar","SOR_GLOBAL_UPDATE":"Update","SOR_GLOBAL_SUBMIT":"Submit","SOR_CHANGE_ADDRESS_TITLE":"Change Address","SOR_QUANTITY_RESTRAIN_ERROR":"Quantity must be greater than 0","SOR_CHANGEADDRESS_ERROR_NOSHIPPING":"There are no shipping methods available for this address. Please select a valid address.","SOR_CHANGEADDRESS_ERROR_SHIPPING":"An error occured while retrieving available shipping methods. Please try again later.","SOR_ADDFROMPDP_WARNING_SAVE":"Please select a subscription.","SOR_DIALOG_SUBSCRIPTION":"Detalhes / Editar Assinatura","SOR_CONFIRM_REACTIVE_SUBSCRIPTION_TITLE":"Assinatura reativada!","SOR_DIALOG_ORDER":"Remessa do pedido do dia"};
+  SmartOrderRefillSettings.Urls = {"loginFromCartPage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-RequireLogin","manageOrders":"/gerenciar-recompra","updateRefillData":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-UpdateCartProductRefillInformation","getSubscriptionsToAddProductFromPDP":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetSubscriptionsToAddProductFromPDP","updatePDPOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-PDPRefillOptions","cancelOneOrder":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-SkipOrder","cartShow":"/carrinho","getVariantOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetVariantOptions","getIntervalOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetIntervalOptions","getMasterProductID":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetMasterProductID","getLimitedSubscriptionPDPMessage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetLimitedSubscriptionPDPMessage"};
+  SmartOrderRefillSettings.SitePreferences = {"SOR_ENABLED":true};
+  SmartOrderRefillSettings.hasSORProducts = false;
+</script>
+
+<script defer type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/smartOrderRefill.js"></script>
+
+
+
+
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal-btn" data-dismiss="modal" aria-label="Fechar">
+                    <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwe7bf1da3/svg/close-modal-icon.svg" alt="" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="content-wrapper">
+                    <img class="icon product-added-success" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw033be606/svg/icon-cart-add.svg" alt="" />
+                    <img class="icon product-added-fail" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwbbb1257d/svg/product-added-fail.svg" alt="" />
+                    <img class="icon product-wishlist-add" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw88cab205/svg/icon-wishlist-added.svg" alt="" />
+                    <img class="icon product-wishlist-remove" src="../on/demandware.static/Sites-CacauShow-Site/-/default/dwa21fe753/svg/icon-wishlist-removed.svg" alt="" />
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="4bca5d0fb5512994476a3b2659" -->
+        <div id="consent-tracking" class="alert mb-0 fixed-bottom text-center d-none" role="alert">
+     <div class="alert-content d-inline-block pt-1 pb-1"></div>
+     <button type="button" class="affirm btn text-white pr-2 pl-2 mr-1 pb-1 pt-1 float-sm-right float-xs-center" data-dismiss="alert">Aceitar todos os cookies</button>
+</div>
+    </div> <!-- End content-asset -->
+
+
+
+
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+
+<![endif]-->
+
+
+<span class="api-true  tracking-consent"
+    data-caOnline="true"
+    data-url="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-GetContent?cid=tracking_hint"
+    data-reject="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=false"
+    data-accept="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=true"
+    data-acceptText="Sim"
+    data-rejectText="N&atilde;o"
+    data-heading="Cookies"
+    data-tokenName="csrf_token"
+    data-token="CtE6DULHviBgmzB49jpAttCe9TnRAoWylGIv53ewFSBv-BO6CGkC9X_w7VOg-UNekUXLWkkPkv2R4R4qTdjKRsgAV0rcDQjDLhu1d2cNdYvLJZ8Y4L9-Jsztino1OizTVQpTQmlcYHlRVD5OpgzS3C2ry3svEviMyiTXHUsk2huUgJtwNYQ="
+    ></span>
+
+
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-cep">
+    <div class="modal-dialog modal-dialog-scrollable step-01" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-CheckStoreAvailabilityByPostalCode" data-action-select-store="/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" method="post" class="modal-cep" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Bem-vindo à Cacau Show
+                    </h5>
+                    <p class="modal-subTitle">
+                        Para encontrarmos os <strong>melhores preços e o estoque</strong> mais perto de você, por gentileza <strong>informe seu CEP:</strong>
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex form-row flex-row justify-content-between mb-1">
+                        
+                        <div class="form-group required">
+                            <label class="form-control-label" for="customer-postal-code">
+                                CEP
+                            </label>
+                            <input type="text"
+                                class="form-control js-postal-code-format postal-code-input"
+                                id="customer-postal-code"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                                required
+                                autocomplete="postal-code"
+                                autofocus
+                                name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8" />
+                            <div class="invalid-feedback" id="zipCode-error"></div>
+                        </div>
+
+                        
+                        <div class="form-group required" >
+                            <label class="form-control-label" for="customer-street-number">
+                                Número
+                            </label>
+                            <input type="text"
+                                class="form-control postal-code-input"
+                                id="customer-street-number"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                                required
+                                name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                                autocomplete="shipping address-number" />
+                            <div class="invalid-feedback" id="userNum-error"></div>
+                        </div>
+                    </div>
+
+                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="btn-postal-code" rel="noopener" role="button" target="_blank" title="N&atilde;o sei meu CEP">
+                        N&atilde;o sei meu CEP
+                    </a>
+
+                    <div class="modal-address">
+                        <p class="zip-code-not-found"></p>
+                    </div>
+
+                    
+                    
+
+
+                    <div class="col-12 js-modal-stores pickupStores border-0 p-0 mb-0 d-none"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="hidden" name="csrf_token" value="KPxUxTQQnKanljlXtkf0pwgzrhbJixjiGCKJ7448dtZhAGZHbHMzkKZJIO8psPBM8Jgt0dVco3WXSkjJNJmIwsXYgHelbWipFPOvAObEwMEpOUKbyAwfKBCHKEMyTa1NtZMJBjCXBfFmdfptojdHLYK00Z7wShriqmZH2xuhmaXg85uUw7o="/>
+                    <button type="submit" class="btn btn-primary">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-address">
+    <div class="modal-dialog" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" id="address-form" method="post" class="modal-address" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Informe seu endere&ccedil;o
+                    </h5>
+                    <a href="javascript:void(0);" class="modal-close" data-dismiss="modal" aria-label="Fechar">
+                        <img src="../on/demandware.static/Sites-CacauShow-Site/-/default/dw6ddd3d57/images/icon_modal_close.png" alt="Cacau Show" />
+                    </a>
+                </div>
+                <div class="modal-adress-body">
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street">
+                            Endereço
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_street" required aria-required="true" value="" maxLength="2147483647"
+                            autofocus
+                            autocomplete="shipping address1" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street-number">
+                            Número
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street-number"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                            autocomplete="shipping address-number" />
+                        <div class="invalid-feedback" id="userNum-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group " >
+                        <label class="form-control-label" for="customer-neighborhood">
+                            Bairro
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-neighborhood"
+                            data-missing-error="Por favor preencher o campo"
+                            
+                            name="dwfrm_storeUpdate_customerAddress_neighborhood" value="" maxLength="2147483647"
+                            autocomplete="shipping address2" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-city">
+                            Cidade
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-city"
+                            data-missing-error="Por favor preencher o campo"
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_city" required aria-required="true" value="" maxLength="2147483647"
+                            autocomplete="shipping city" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-postal-code">
+                            CEP
+                        </label>
+                        <input type="text"
+                            class="form-control js-postal-code-format"
+                            id="customer-postal-code"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                            required
+                            autocomplete="postal-code"
+                            name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8"
+                            readonly/>
+                        <div class="invalid-feedback" id="zipCode-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-state">
+                            Estado
+                        </label>
+                        <select
+                            class="form-control shippingState custom-select" id="customer-state"
+                            autocomplete="shipping address-level1"
+                            aria-describedby="customer-state"
+                            name="dwfrm_storeUpdate_customerAddress_state" required aria-required="true"
+                            readonly
+                            >
+                            
+                                <option id="AC" value="AC" >Acre</option>
+                            
+                                <option id="AL" value="AL" >Alagoas</option>
+                            
+                                <option id="AP" value="AP" >Amap&aacute;</option>
+                            
+                                <option id="AM" value="AM" >Amazonas</option>
+                            
+                                <option id="BA" value="BA" >Bahia</option>
+                            
+                                <option id="CE" value="CE" >Cear&aacute;</option>
+                            
+                                <option id="DF" value="DF" >Distrito Federal</option>
+                            
+                                <option id="ES" value="ES" >Esp&iacute;rito Santo</option>
+                            
+                                <option id="GO" value="GO" >Goi&aacute;s</option>
+                            
+                                <option id="MA" value="MA" >Maranh&atilde;o</option>
+                            
+                                <option id="MT" value="MT" >Mato Grosso</option>
+                            
+                                <option id="MS" value="MS" >Mato Grosso do Sul</option>
+                            
+                                <option id="MG" value="MG" >Minas Gerais</option>
+                            
+                                <option id="PA" value="PA" >Par&aacute;</option>
+                            
+                                <option id="PB" value="PB" >Para&iacute;ba</option>
+                            
+                                <option id="PR" value="PR" >Paran&aacute;</option>
+                            
+                                <option id="PE" value="PE" >Pernambuco</option>
+                            
+                                <option id="PI" value="PI" >Piau&iacute;</option>
+                            
+                                <option id="RJ" value="RJ" >Rio de Janeiro</option>
+                            
+                                <option id="RN" value="RN" >Rio Grande do Norte</option>
+                            
+                                <option id="RS" value="RS" >Rio Grande do Sul</option>
+                            
+                                <option id="RO" value="RO" >Rond&ocirc;nia</option>
+                            
+                                <option id="RR" value="RR" >Roraima</option>
+                            
+                                <option id="SC" value="SC" >Santa Catarina</option>
+                            
+                                <option id="SP" value="SP" >S&atilde;o Paulo</option>
+                            
+                                <option id="SE" value="SE" >Sergipe</option>
+                            
+                                <option id="TO" value="TO" >Tocantins</option>
+                            
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modal__error">Nenhuma loja encontrada para esse endere&ccedil;o.</p>
+                    <input type="hidden" name="csrf_token" value="KPxUxTQQnKanljlXtkf0pwgzrhbJixjiGCKJ7448dtZhAGZHbHMzkKZJIO8psPBM8Jgt0dVco3WXSkjJNJmIwsXYgHelbWipFPOvAObEwMEpOUKbyAwfKBCHKEMyTa1NtZMJBjCXBfFmdfptojdHLYK00Z7wShriqmZH2xuhmaXg85uUw7o="/>
+                    <button type="submit" class="btn btn-primary">
+                        Confirmar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="removeProductModal" tabindex="-1" role="dialog" aria-labelledby="removeProductLineItemModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header delete-confirmation-header">
+                <h2 class="modal-title" id="removeProductLineItemModal">Remover produto ?</h2>
+            </div>
+            <div class="modal-body delete-confirmation-body">
+                Deseja remover o produto do carrinho ?
+                <p class="product-to-remove"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary cart-delete-confirmation-btn"
+                    data-dismiss="modal"
+                >
+                    Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <input type="hidden" id="googleRecaptchaSiteKey" value="6LelHCgjAAAAAHSpCbAC4G4MzSgr-vyKDPL_x1bA"/>
+    <input type="hidden" id="googleRecaptchaAction"  value="submit"/>
+
+
+
+<input type="hidden" name="pendingTerms" value="null" />
+
+
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="../on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
